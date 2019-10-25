@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09ea7d50-6e7b-47d7-a236-67f5ada17487" name="Default Changelist" comment="" />
+    <list default="true" id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/pandaapAPI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pandaapp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EntityClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/EntityClass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/checkAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getallProductfollowsubCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/getallProductfollowsubCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/searchProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/searchProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/searchProductbyCategory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serachProductbyShop.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serachProductbynameProduct.php" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +27,15 @@
       <executable />
     </execution>
   </component>
-  <component name="ProjectId" id="1Sb4I3QA9hgy7cQXEMuuTFnttX4" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Sb8lkJryIkTVoq63wgYENlF2mP" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -31,21 +49,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.searchProduct.php">
-    <configuration name="searchProduct.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaapp/searchProduct.php" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.addAccount.php">
+    <configuration name="addAccount.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/addAccount.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="serachProductbyShop.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaapp/serachProductbyShop.php" useBuiltInWebServerPort="true">
+    <configuration name="checkAccount.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/checkAccount.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="serachProductbynameProduct.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaapp/serachProductbynameProduct.php" useBuiltInWebServerPort="true">
+    <configuration name="getOrderofCustomers.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaapAPI/getOrderofCustomers.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="getallProductfollowsubCategory.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaapAPI/getallProductfollowsubCategory.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.searchProduct.php" />
-        <item itemvalue="JavaScript Debug.serachProductbynameProduct.php" />
-        <item itemvalue="JavaScript Debug.serachProductbyShop.php" />
+        <item itemvalue="JavaScript Debug.addAccount.php" />
+        <item itemvalue="JavaScript Debug.checkAccount.php" />
+        <item itemvalue="JavaScript Debug.getallProductfollowsubCategory.php" />
+        <item itemvalue="JavaScript Debug.getOrderofCustomers.php" />
       </list>
     </recent_temporary>
   </component>
@@ -54,16 +76,32 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="09ea7d50-6e7b-47d7-a236-67f5ada17487" name="Default Changelist" comment="" />
-      <created>1571818877487</created>
+      <changelist id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="" />
+      <created>1571821087211</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571818877487</updated>
-      <workItem from="1571818879540" duration="2000000" />
+      <updated>1571821087211</updated>
+      <workItem from="1571821088332" duration="9743000" />
+      <workItem from="1571905281061" duration="4706000" />
+      <workItem from="1571970605706" duration="7523000" />
+      <workItem from="1571985584959" duration="2279000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
