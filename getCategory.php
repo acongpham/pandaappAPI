@@ -5,17 +5,20 @@ include 'config/dbcon.php';
  $arrCategory=array();
 while ($row=mysqli_fetch_assoc($data)) {
 	array_push($arrCategory, new Category(
-		$row['cateId'],		
-		$row['categoryName']));
+		$row['idcategory'],
+		$row['categoryName'],
+        $row['thumbnailCate']
+    ));
 }
      echo json_encode($arrCategory);
  class Category 
 {
 	
-	function Category($cateId,$categoryName)
+	function Category($idcategory,$categoryName,$thumbnailCate)
 	{
-		$this->cateId=$cateId;
-		$this->categoryName=$categoryName;		
+		$this->idcategory=$idcategory;
+		$this->categoryName=$categoryName;
+		$this->thumbnailCate=$thumbnailCate;
 	}
 }
 ?>

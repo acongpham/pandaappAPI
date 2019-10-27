@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/pandaapAPI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addAccount.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pandaapp.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EntityClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/EntityClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/checkAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/getCategory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/getallProductfollowsubCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/getallProductfollowsubCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searchProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/searchProduct.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searchProductbyCategory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/serachProductbyShop.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/serachProductbynameProduct.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,11 +40,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.addAccount.php">
+  <component name="RunManager" selected="JavaScript Debug.getCategory.php">
     <configuration name="addAccount.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/addAccount.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="checkAccount.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/checkAccount.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="getCategory.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/getCategory.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="getOrderofCustomers.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaapAPI/getOrderofCustomers.php" useBuiltInWebServerPort="true">
@@ -64,9 +58,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.getCategory.php" />
+        <item itemvalue="JavaScript Debug.getallProductfollowsubCategory.php" />
         <item itemvalue="JavaScript Debug.addAccount.php" />
         <item itemvalue="JavaScript Debug.checkAccount.php" />
-        <item itemvalue="JavaScript Debug.getallProductfollowsubCategory.php" />
         <item itemvalue="JavaScript Debug.getOrderofCustomers.php" />
       </list>
     </recent_temporary>
@@ -84,7 +79,9 @@
       <workItem from="1571821088332" duration="9743000" />
       <workItem from="1571905281061" duration="4706000" />
       <workItem from="1571970605706" duration="7523000" />
-      <workItem from="1571985584959" duration="2279000" />
+      <workItem from="1571985584959" duration="3589000" />
+      <workItem from="1572103692740" duration="601000" />
+      <workItem from="1572175860282" duration="7002000" />
     </task>
     <servers />
   </component>

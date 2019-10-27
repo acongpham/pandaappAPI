@@ -1,8 +1,8 @@
 <?php
  class Product 
 {
-	
-	function Product($productId,$name,$price,$discount,$shopName,$idShop)
+ var $images=Array();
+	function Product($productId,$name,$price,$discount,$shopName,$idShop,$images,$detail)
 	{
 		$this->productId=$productId;
 		$this->name=$name;
@@ -10,6 +10,9 @@
 		$this->discount=$discount;
 		$this->shopName=$shopName;
 		$this->idShop=$idShop;
+		$this->images=$images;
+		$this->detail=$detail;
+
                 
 	}
 }
