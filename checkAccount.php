@@ -1,9 +1,10 @@
 <?php
 include 'config/dbcon.php';
 include 'EntityClass.php';
-$idCategory = '1';
+
 $useraccount = $_POST['usernameaccount'];// set cứng, khi code thì truyền biến
 $passwordaccount = $_POST['passwordaccount'];// set cứng, khi code thì truyền biến
+
 $query = "SELECT * FROM account WHERE usename='$useraccount' AND password='$passwordaccount' AND accountStatus=1";
 $data = mysqli_query($conn, $query);
 $arrAccount = array();
