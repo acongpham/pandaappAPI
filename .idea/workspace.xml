@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EntityClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/EntityClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/checkAccount.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +37,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.getFavoriteItem.php">
+  <component name="RunManager" selected="JavaScript Debug.UploadHinhAnh.php">
+    <configuration name="UploadHinhAnh.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/nbproject/UploadHinhAnh.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="checkAccount.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/checkAccount.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -52,16 +53,13 @@
     <configuration name="getUpdateProduct.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/getUpdateProduct.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="getallProductfollowsubCategory.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaapAPI/getallProductfollowsubCategory.php" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.UploadHinhAnh.php" />
         <item itemvalue="JavaScript Debug.getFavoriteItem.php" />
         <item itemvalue="JavaScript Debug.getUpdateProduct.php" />
         <item itemvalue="JavaScript Debug.checkAccount.php" />
         <item itemvalue="JavaScript Debug.getCategory.php" />
-        <item itemvalue="JavaScript Debug.getallProductfollowsubCategory.php" />
       </list>
     </recent_temporary>
   </component>
@@ -84,6 +82,7 @@
       <workItem from="1572248696170" duration="4453000" />
       <workItem from="1572594878859" duration="2436000" />
       <workItem from="1572612056612" duration="4168000" />
+      <workItem from="1572854055523" duration="1658000" />
     </task>
     <servers />
   </component>
