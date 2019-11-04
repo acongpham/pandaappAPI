@@ -10,6 +10,7 @@ $data = mysqli_query($conn, $query);
 $arrAccount = array();
 while ($row = mysqli_fetch_assoc($data)) {
     array_push($arrAccount, new Account(
+        $row['AccountId'],
         $row['roleId'],
         $row['idShop'],
         $row['usename'],

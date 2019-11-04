@@ -28,8 +28,9 @@ class Shop
 class Account
 {
 
-	function Account($roleId, $idShop, $usename, $password, $name, $phone_number, $address, $gender, $email, $DateOfBirth, $accountStatus)
+	function Account($AccountId,$roleId, $idShop, $usename, $password, $name, $phone_number, $address, $gender, $email, $DateOfBirth, $accountStatus)
 	{
+		$this->AccountId=$AccountId;
 		$this->roleId = $roleId;
 		$this->idShop = $idShop;
 		$this->usename = $usename;
