@@ -1,34 +1,38 @@
 <?php
 include 'config/dbcon.php';
-$idShop='1'; // set cứng, khi code thì truyền biến
- $query="SELECT product.productId,product.name,product.price,product.detail,product.discount FROM `product` WHERE idShop=".$idShop;
- $data= mysqli_query($conn, $query);
- $array=array(); 
-while ($row=mysqli_fetch_assoc($data)) {
-	array_push($array, new Order(
-		$row['productId'],	
-                $row['name'],	
-                $row['price'],	
-                $row['detail'],	
-                $row['discount']	
-                ));
-}
-echo json_encode($array);
-class Order 
-{
-	
-	function Order($productId,$name,$price,$detail,$discount)
-	{
-		$this->productId=$productId;
-		$this->name=$name;
-                $this->$price=$price;
-                $this->$detail=$detail;
-                $this->discount=$discount;
-                
-	}
-}
- 
-?>
+include 'EntityClass.php';
 
-<!--//Cần lấy thông tin sản phẩm bao gồm: idproduct, tên sản phẩm, giá sản phẩm, mô tả sản phẩm, ảnh sản phẩm-->
+$key = $_POST['idshop'];
+//$key = 1;
+$query = "select productId,name,price,product.discount,shop.shopName,shop.idShop,product.detail from Product 
+INNER JOIN shop on shop.idShop=product.idShop
+where product.idShop=$key";
+$data = mysqli_query($conn, $query);
+$array = array();
+while ($row = mysqli_fetch_assoc($data)) {
+    $key2 = $row['productId'];
+
+    $query2 = "SELECT image from images INNER JOIN product on product.productId=images.productId WHERE product.productId='$key2'";
+    $dataimg = mysqli_query($conn, $query2);
+    $arrayimg = array();
+    while ($rowimg = mysqli_fetch_assoc($dataimg)) {
+
+        array_push($arrayimg, $rowimg['image']);
+
+    }
+    array_push($array, new Product(
+        $row['productId'],
+        $row['name'],
+        $row['price'],
+        $row['discount'],
+        $row['shopName'],
+        $row['idShop'],
+        $arrayimg,
+        $row['detail']
+    ));
+}
+
+echo json_encode($array);
+
+?>
 
