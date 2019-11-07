@@ -34,7 +34,7 @@ if ($row === 0) {
     }
     echo $last_id_account;
 } else {
-    echo "xxx001"; //mã lỗi tài khoản tồn tại
+    echo "Exist"; //mã lỗi tài khoản tồn tại
 
 }
 

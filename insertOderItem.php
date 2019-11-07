@@ -13,9 +13,9 @@ $sql ="INSERT INTO oder_item VALUES ($oderId,$productId,$amount,$total)" ;
 $data =mysqli_query($conn,$sql);
 if($data)
 {
-    echo 'Them item thanh cong';
+    echo 'Success';
 }else{
    // echo "'.$oderId.','.$productId.','.$amount.','.$total.'";
-    echo 'them item that bai';
+    echo 'Error';
 }
 ?>

@@ -2,7 +2,6 @@
 include 'config/dbcon.php';
 include 'EntityClass.php';
 $key = $_POST['idcategory'];
-
 $query = "select productId,name,price,product.discount,shop.shopName,shop.idShop,product.detail from Product 
 INNER JOIN shop on shop.idShop=product.idShop
 where idcategory='$key'";

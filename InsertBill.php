@@ -12,7 +12,7 @@ $phone_number=$_POST["phone_number"];
 //$address="LA hieen";
 //$phone_number="01234566";
 
-$sql ="INSERT INTO oder VALUES (null,'.$AccountId.','1',now(),'.$totalPrice.','.$name.','.$address.','.$phone_number.')" ;
+$sql ="INSERT INTO oder VALUES (null,'$AccountId','1',now(),'$totalPrice','$name','$address','$phone_number')" ;
  $data =mysqli_query($conn,$sql);
  if($data)
  {

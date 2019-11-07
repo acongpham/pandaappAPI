@@ -8,7 +8,7 @@ if (move_uploaded_file($_FILES['upload_file']['tmp_name'], $file_path)) {
     echo $linkimage;
 
 } else {
-    echo "Add Image Error";
+    echo "Error";
 
 }
 

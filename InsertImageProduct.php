@@ -1,13 +1,19 @@
 <?php
 include 'config/dbcon.php';
 include 'EntityClass.php';
-$image=$_POST['image'];
-$productId=$_POST['productId'];
-if (strlen($image)>0 &&strlen($productId)>0) {
+$image = $_POST['image'];
+$productId = $_POST['productId'];
+if (strlen($image) > 0 && strlen($productId) > 0) {
     $query = "INSERT INTO images VALUES ('','$image','$productId')";
-    $data1=mysqli_query($conn,$query);
+    $data1 = mysqli_query($conn, $query);
+    if ($data1) {
+        echo "Success";
 
-} else{
+    } else {
+        echo "Faild";
+    }
+
+} else {
     echo "Null";
 }
 

@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InsertBill.php" beforeDir="false" afterPath="$PROJECT_DIR$/InsertBill.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InsertImageProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/InsertImageProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UploadHinhAnh.php" beforeDir="false" afterPath="$PROJECT_DIR$/UploadHinhAnh.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/addAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/checkAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getallProductfollowsubCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/getallProductCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insertOderItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/insertOderItem.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,11 +44,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.insertOderItem.php">
+  <component name="RunManager" selected="JavaScript Debug.checkAccount.php">
     <configuration name="InsertBill.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/InsertBill.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="UploadHinhAnh.php (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/UploadHinhAnh.php" useBuiltInWebServerPort="true">
+    <configuration name="checkAccount.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/checkAccount.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="getProductofShop.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/getProductofShop.php" useBuiltInWebServerPort="true">
@@ -55,11 +62,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.checkAccount.php" />
         <item itemvalue="JavaScript Debug.insertOderItem.php" />
         <item itemvalue="JavaScript Debug.InsertBill.php" />
         <item itemvalue="JavaScript Debug.getProductofShop.php" />
         <item itemvalue="JavaScript Debug.getallProductfollowsubCategory.php" />
-        <item itemvalue="JavaScript Debug.UploadHinhAnh.php (1)" />
       </list>
     </recent_temporary>
   </component>
