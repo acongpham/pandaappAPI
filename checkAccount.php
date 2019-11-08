@@ -2,11 +2,10 @@
 include 'config/dbcon.php';
 include 'EntityClass.php';
 
-//$useraccount = $_POST['usernameaccount'];
-//$passwordaccount = $_POST['passwordaccount'];
+$useraccount = $_POST['usernameaccount'];
+$passwordaccount = $_POST['passwordaccount'];
 
-$useraccount = "tunguyen";
-$passwordaccount = "12345678";
+
 
 $query = "SELECT * FROM account WHERE usename='$useraccount' AND password='$passwordaccount' AND accountStatus=1";
 $data = mysqli_query($conn, $query);
