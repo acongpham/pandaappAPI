@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DeleteFileOnServer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UpdateProduct.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getProduct.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getOrderItemShop.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getOrderShop.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/checkAccount.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/com1573035549220.microvirt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EntityClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/EntityClass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getProductofShop.php" beforeDir="false" afterPath="$PROJECT_DIR$/getProductofShop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/ERD11573226287861.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573229379090.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573229402314.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573229743253.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/img1573224306119.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/sodoquanhe1573226287899.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +35,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\InstalllToC\xampp\htdocs\pandaapAPI" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -42,11 +52,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.UpdateProduct.php">
+  <component name="RunManager" selected="JavaScript Debug.getOrderShop.php">
     <configuration name="DeleteFileOnServer.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/DeleteFileOnServer.php" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="InsertBill.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/InsertBill.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="UpdateProduct.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/UpdateProduct.php" useBuiltInWebServerPort="true">
@@ -55,16 +62,19 @@
     <configuration name="checkAccount.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/checkAccount.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="getOrderShop.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/getOrderShop.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="insertOderItem.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/insertOderItem.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.getOrderShop.php" />
         <item itemvalue="JavaScript Debug.UpdateProduct.php" />
         <item itemvalue="JavaScript Debug.DeleteFileOnServer.php" />
         <item itemvalue="JavaScript Debug.checkAccount.php" />
         <item itemvalue="JavaScript Debug.insertOderItem.php" />
-        <item itemvalue="JavaScript Debug.InsertBill.php" />
       </list>
     </recent_temporary>
   </component>
@@ -91,7 +101,9 @@
       <workItem from="1572929376489" duration="17010000" />
       <workItem from="1573052074494" duration="9327000" />
       <workItem from="1573095607967" duration="2204000" />
-      <workItem from="1573211935287" duration="9994000" />
+      <workItem from="1573211935287" duration="11140000" />
+      <workItem from="1573402662911" duration="5062000" />
+      <workItem from="1573454509705" duration="3940000" />
     </task>
     <servers />
   </component>
