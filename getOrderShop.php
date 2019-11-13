@@ -24,7 +24,7 @@ while ($row = mysqli_fetch_assoc($data)) {
             $rowitem['total']
         ));
     }
-    array_push($array, new Order(
+    array_push($array, new OrderShop(
         $row['oderId'],
         $row['AccountId'],
         $row['date_created'],

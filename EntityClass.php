@@ -25,14 +25,32 @@ class Shop
 		$this->shopName=$shopName;
 			}
 }
-class Order
+class OrderShop
 
 {
 
-	function Order($oderId,$AccountId,$date_created,$totalPrice,$name,$address,$phone_number,$orderitem)
+	function OrderShop($oderId, $AccountId, $date_created, $totalPrice, $name, $address, $phone_number, $orderitem)
 	{
 		$this->oderId=$oderId;
 		$this->AccountId=$AccountId;
+		$this->date_created=$date_created;
+		$this->totalPrice=$totalPrice;
+		$this->name=$name;
+		$this->address=$address;
+		$this->phone_number=$phone_number;
+		$this->orderitem=$orderitem;
+	}
+}
+class OrderCustomer
+
+{
+
+	function OrderCustomer($oderId,$idShop, $shopName, $date_created, $totalPrice, $name, $address, $phone_number, $orderitem)
+	{
+
+		$this->oderId=$oderId;
+		$this->idShop=$idShop;
+		$this->shopName=$shopName;
 		$this->date_created=$date_created;
 		$this->totalPrice=$totalPrice;
 		$this->name=$name;
