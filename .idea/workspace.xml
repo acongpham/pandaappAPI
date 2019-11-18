@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/setStatusOrder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EntityClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/EntityClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getOrderItemShop.php" beforeDir="false" afterPath="$PROJECT_DIR$/getOrderItemShop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getOrderOfShop.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/getOrderShop.php" beforeDir="false" afterPath="$PROJECT_DIR$/getOrderShop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getOrderofCustomers.php" beforeDir="false" afterPath="$PROJECT_DIR$/getOrderofCustomers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getsubCategory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getallProductCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/getallProductCategory.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,6 +97,9 @@
       <workItem from="1573454509705" duration="3940000" />
       <workItem from="1573485553722" duration="609000" />
       <workItem from="1573533503430" duration="4862000" />
+      <workItem from="1573831883186" duration="9000" />
+      <workItem from="1573901627461" duration="555000" />
+      <workItem from="1573991605018" duration="3354000" />
     </task>
     <servers />
   </component>
