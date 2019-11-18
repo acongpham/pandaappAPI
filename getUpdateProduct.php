@@ -3,8 +3,9 @@ include 'config/dbcon.php';
 include 'EntityClass.php';
 
 $limit = $_POST['limit'];
+$offset = $_POST['offset'];
 $query = "select productId,name,price,product.discount,shop.shopName,shop.idShop,product.detail from Product 
-INNER JOIN shop on shop.idShop=product.idShop ORDER BY product.productId DESC  LIMIT $limit";
+INNER JOIN shop on shop.idShop=product.idShop ORDER BY product.productId DESC  LIMIT $limit offset $offset" ;
 $data = mysqli_query($conn, $query);
 $array = array();
 while ($row = mysqli_fetch_assoc($data)) {
