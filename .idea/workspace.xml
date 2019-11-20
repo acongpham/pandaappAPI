@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/controller/account.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/controller/basic_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/controller/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/controller/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/module/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/module/header-body.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/module/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/module/sidebar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getallProductCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/getallProductCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/dbcon.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/dbcon.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +31,12 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/controller" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/controller" />
       <recent name="D:\InstalllToC\xampp\htdocs\pandaapAPI" />
     </key>
   </component>
@@ -43,29 +52,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.getOrderofCustomers.php">
-    <configuration name="DeleteFileOnServer.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/DeleteFileOnServer.php" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.login.php">
+    <configuration name="account.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/admin/controller/account.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="UpdateProduct.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/UpdateProduct.php" useBuiltInWebServerPort="true">
+    <configuration name="basic_table.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/admin/basic_table.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="getOrderShop.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/getOrderShop.php" useBuiltInWebServerPort="true">
+    <configuration name="basic_table.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/admin/controller/basic_table.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="getOrderofCustomers.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/getOrderofCustomers.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="setStatusOrder.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/setStatusOrder.php" useBuiltInWebServerPort="true">
+    <configuration name="login.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/admin/controller/login.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.login.php" />
+        <item itemvalue="JavaScript Debug.basic_table.php" />
+        <item itemvalue="JavaScript Debug.account.php" />
+        <item itemvalue="JavaScript Debug.basic_table.html" />
         <item itemvalue="JavaScript Debug.getOrderofCustomers.php" />
-        <item itemvalue="JavaScript Debug.setStatusOrder.php" />
-        <item itemvalue="JavaScript Debug.getOrderShop.php" />
-        <item itemvalue="JavaScript Debug.UpdateProduct.php" />
-        <item itemvalue="JavaScript Debug.DeleteFileOnServer.php" />
       </list>
     </recent_temporary>
   </component>
@@ -100,6 +109,8 @@
       <workItem from="1573831883186" duration="9000" />
       <workItem from="1573901627461" duration="555000" />
       <workItem from="1573991605018" duration="3354000" />
+      <workItem from="1574182258315" duration="1588000" />
+      <workItem from="1574235866621" duration="9141000" />
     </task>
     <servers />
   </component>
