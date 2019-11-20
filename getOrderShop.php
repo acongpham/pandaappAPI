@@ -4,7 +4,7 @@ include 'EntityClass.php';
 $key = $_POST['idShop'];
 $statusId = $_POST['statusId'];
 
-//$key = 1;
+
 $query = "SELECT oder.oderId,oder.AccountId,oder.date_created,oder.totalPrice,oder.name,oder.address,oder.phone_number
              from oder INNER JOIN oder_item ON oder.oderId=oder_item.oderId INNER JOIN product ON oder_item.productId=product.productId 
             INNER JOIN shop ON shop.idShop=product.idShop WHERE shop.idShop='$key' AND oder.statusId='$statusId' 
