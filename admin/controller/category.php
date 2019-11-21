@@ -7,7 +7,7 @@ if (!isset($_SESSION['admin_login'])) {
 }
 
 include("../../config/dbcon.php");
-$query = "SELECT * FROM account";
+$query = "SELECT * FROM category";
 $data = mysqli_query($conn, $query);
 
 
@@ -36,107 +36,69 @@ include("../module/header.php");
         <section class="wrapper">
             <!--nội dung chính-->
 
-            <div class="table-agile-info">
+            <div>
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Danh sách tài khoản
+                        Danh mục sản phẩm
                     </div>
-                    <div>
-                        <table class="table" border="1" align="center">
-                            <thead>
-                            <tr>
-                                <th align="center">ID</th>
-                                <th width="100px">Loại tài khoản</th>
-                                <th idth="100px">idShop</th>
-                                <th>usename</th>
-                                <th>Họ tên</th>
-                                <th>Số điện thoại</th>
-                                <th>Địa chỉ</th>
-                                <th data-breakpoints="xs">Giới tính</th>
+                    <div align="center">
+                        <table  border="1" >
 
-                                <th data-breakpoints="xs sm md" data-title="DOB">Email</th>
-                                <th data-breakpoints="xs sm md" data-title="DOB">Ngày sinh</th>
-                                <th data-breakpoints="xs sm md" data-title="DOB">Trạng thái</th>
-                                <th></th>
+                            <tr align="center">
+                                <th width="100" bgcolor="#ff56de" align="center" ><font color="white">Số thứ tự</font></th>
+                                <th width="150"
+                                    bgcolor="ff56de"><font color="white">idcategory</font></th>
+                                <th width="300" bgcolor="ff56de"><font color="white">Tên danh mục</font></th>
+                                <th width="200" bgcolor="ff56de" align="center"><font color="white">Ảnh mô tả</font></th>
+                                <th bgcolor="ff56de" width="100"></th>
 
 
                             </tr>
                             </thead>
-                            <tbody>
+                            <tbody align="center">
                             <?php
+                            $stt = 1;
                             while ($row = mysqli_fetch_assoc($data)) {
                                 ?>
                                 <tr data-expanded="true">
                                     <td>
                                         <?php
-                                        echo $row['AccountId'] ?>
+                                        echo $stt; ?>
                                     </td>
                                     <td>
                                         <?php
-                                        if ($row['roleId'] == 1) {
-                                            echo "Mua";
+                                        echo $row['idcategory']; ?>
+                                    </td>
+                                    <td>
+                                        <?php
 
-                                        } else {
-                                            echo "Bán";
 
-                                        } ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        echo $row['idShop'] ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        echo $row['usename'] ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        echo $row['name'] ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        echo $row['phone_number'] ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        echo $row['address'] ?></td>
-                                    <td>
-                                        <?php
-                                        if ($row['gender'] == 1) {
-                                            echo "Nam";
-                                        } else {
-                                            echo "Nữ";
-                                        } ?>
+                                        echo $row['categoryName'];
 
-                                    </td>
-                                    <td>
-                                        <?php
-                                        echo $row['email'] ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        echo $row['DateOfBirth'] ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        if ($row['accountStatus'] == 1) {
-                                            echo "Hoạt động";
-                                        } else {
-                                            echo "Ngừng hoạt động ";
-                                        } ?>
+                                        ?>
                                     </td>
                                     <td>
 
-                                            <a href="del_account.php">
-                                                <img border="0" alt="" src="../../image/image/del.png" width="20" height="20">
-                                            </a>
+
+                                        <img alt="1fd" src="<?php
+                                        echo "../../" . $row['thumbnailCate'] ?>" width="100" height="100">
+                                    </td>
+
+                                    <td>
+
+                                        <a href="del_account.php">
+                                            <img border="0" alt="" src="../../image/image/del.png" width="20"
+                                                 height="20">
+                                        </a>
                                         <a href="edit_account.php">
-                                            <img border="0" alt="" src="../../image/image/edit.png" width="20" height="20">
+                                            <img border="0" alt="" src="../../image/image/edit.png" width="20"
+                                                 height="20">
                                         </a>
 
                                     </td>
                                 </tr>
                                 <?php
+                                $stt++;
                             }
                             ?>
 

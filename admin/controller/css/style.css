@@ -241,7 +241,7 @@ ul.sidebar-menu li a.active i {
 .brand {
     background:#8b5c7e;
     float:left;
-    width:200px;
+    width:180px;
     height:80px;
     position:relative;
 }
@@ -2365,7 +2365,7 @@ ul.inbox-pagination li {
 .w3layouts-main {
     width: 30%;
     margin:5em auto;
-    background:#ffffff;
+    background: #ff56de;
     padding: 42px 35px;
 }
 /*--//header--*/
@@ -2382,7 +2382,7 @@ input.ggg{
 }
 .w3layouts-main span {
     font-size: 16px;
-    color: #fff;
+    color: #ff56de;
     float: left;
     width: 32%;
 	margin-top: 8px;
@@ -2391,13 +2391,13 @@ input.ggg{
     font-size: 16px;
     float: right;
     width: 37%;
-	color: #fff;
+	color: #ff56de;
     letter-spacing: 1px;
 	margin-top: 8px;
 	text-decoration:underline;
 }
 .w3layouts-main a {
-    color: #ffffff;
+    color: #ff56de;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-o-transition:0.5s all;
@@ -2405,7 +2405,7 @@ input.ggg{
 	-ms-transition:0.5s all;
 }
 .w3layouts-main a:hover{
-	color:#ffffff;
+	color: #ff56de;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-o-transition:0.5s all;
@@ -2418,7 +2418,7 @@ input.ggg{
     text-transform: uppercase;
     letter-spacing: 2px;
     background: #ffffff;
-    color: white;
+    color: #ff56de;
     border: none;
     outline: none;
 	display: table;
@@ -2439,15 +2439,15 @@ input.ggg{
 	-ms-transition:0.5s all;
 }
 .w3layouts-main p a {
-    color: #ffffff;
+    color: #ff56de;
     padding: 10px;
 }
 .w3layouts-main p a:hover {
-    color: #fff;
+    color: #ff56de;
 }
 .w3layouts-main p {
     font-size: 17px;
-    color: #ffffff;
+    color: #ff56de;
 	text-align: center;
 }
 /*--//login--*/
@@ -2456,22 +2456,22 @@ h4 input[type="checkbox"] {
 }
 .w3layouts-main h4{
     margin-right: 10px;
-	color:#ffffff;
+	color: #ff56de;
 	font-weight:400;
 	font-size:14px;
 }
  /*--placeholder-color--*/
 ::-webkit-input-placeholder {
-	color:#fff !important;
+	color: #ffffff !important;
 }
 :-moz-placeholder { /* Firefox 18- */
-	color:#fff !important; 
+	color: #ff56de !important;
 }
 ::-moz-placeholder {  /* Firefox 19+ */
-	color:#fff !important;
+	color: #ff56de !important;
 }
 :-ms-input-placeholder {  
-	color:#fff !important;
+	color: #ff56de !important;
 }
 /*--//placeholder-color--*/
 .alert {
@@ -2486,7 +2486,7 @@ div#chartContainer5,div#chartContainer6,div#chartContainer7,div#chartContainer8 
     min-height: 500px;
 }
 .chart_agile_top {
-    background-color: #eef9f0;
+    background-color: #ff56de;
     border-radius: 4px;
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
@@ -2494,14 +2494,14 @@ div#chartContainer5,div#chartContainer6,div#chartContainer7,div#chartContainer8 
     margin: 0 0 2em;
 }
 .floatcharts_w3layouts_top{
-    background-color: #eef9f0;
+    background-color: #ff56de;
     border-radius: 4px;
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
     padding: 2em;
 }
 .map_wthree_top{
-    background-color: #eef9f0;
+    background-color: #ff56de;
     border-radius: 4px;
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
@@ -2515,11 +2515,11 @@ canvas.canvasjs-chart-canvas {
 }
 .chart_agile_bottom{
 	padding:20px;
-	background:#fff;
+	background: #ff56de;
 }
 .floatcharts_w3layouts_bottom{
 	padding:20px;
-	background:#fff;
+	background: #ff56de;
 }
 .floatcharts_w3layouts_left {
     margin-bottom: 2em;

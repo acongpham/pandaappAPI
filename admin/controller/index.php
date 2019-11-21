@@ -1,26 +1,63 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php
+session_start();
+
+if(!isset($_SESSION['admin_login'])){
+ header('location:login.php');
+
+}
+include '../../config/dbcon.php';
+$query = "SELECT COUNT(account.roleId) AS numshop FROM account WHERE roleId=2"; //Đếm số lượng shop
+$data = mysqli_query($conn, $query);
+$numshop=0;
+if ($row=mysqli_fetch_assoc($data)){
+    $numshop=$row['numshop'];
+
+}
+
+$query = "SELECT COUNT(account.roleId) AS numacc FROM account WHERE account.accountStatus=1"; //Đếm số tài khoản đang hoạt động
+$data = mysqli_query($conn, $query);
+$numacc=0;
+if ($row=mysqli_fetch_assoc($data)){
+    $numacc=$row['numacc'];
+
+}
+$query = "SELECT COUNT(category.idcategory) AS numcate FROM category "; //Đếm số danh mục  hàng hóa
+$data = mysqli_query($conn, $query);
+$numcate=0;
+if ($row=mysqli_fetch_assoc($data)){
+    $numcate=$row['numcate'];
+
+}
+
+$query = "SELECT COUNT(product.productId) AS numproduct FROM product "; //Đếm số danh mục  hàng hóa
+$data = mysqli_query($conn, $query);
+$numproduct=0;
+if ($row=mysqli_fetch_assoc($data)){
+    $numproduct=$row['numproduct'];
+
+}
+
+
+?>
 <!DOCTYPE html>
 <?php
-include ("../module/header.php");
+include("../module/header.php");
 ?>
 
 <body>
 <section id="container">
     <!--header start-->
-<?php
-include ("../module/header-body.php");
-?>
+    <?php
+
+    include("../module/header-body.php");
+    ?>
     <!--header end-->
     <!--sidebar start-->
-<?php
-include ("../module/sidebar.php");
-?>
+    <?php
+    include("../module/sidebar.php");
+    ?>
     <!--sidebar end-->
+
     <!--main content start-->
     <section id="main-content">
         <section class="wrapper">
@@ -29,40 +66,47 @@ include ("../module/sidebar.php");
                 <div class="col-md-3 market-update-gd">
                     <div class="market-update-block clr-block-2">
                         <div class="col-md-4 market-update-right">
-                            <i class="fa fa-eye"> </i>
+                            <i class="fa fa-users"></i>
                         </div>
+
                         <div class="col-md-8 market-update-left">
-                            <h4>Visitors</h4>
-                            <h3>13,500</h3>
-                            <p>Other hand, we denounce</p>
+                            <h4>Cửa hàng</h4>
+                            <h3><?php
+                                echo $numshop;
+                                ?></h3>
+
                         </div>
-                        <div class="clearfix"> </div>
+                        <div class="clearfix"></div>
                     </div>
                 </div>
                 <div class="col-md-3 market-update-gd">
                     <div class="market-update-block clr-block-1">
                         <div class="col-md-4 market-update-right">
-                            <i class="fa fa-users" ></i>
+                            <i class="fa fa-users"></i>
                         </div>
                         <div class="col-md-8 market-update-left">
-                            <h4>Users</h4>
-                            <h3>1,250</h3>
-                            <p>Other hand, we denounce</p>
+                            <h4>Tài khoản</h4>
+                            <h3><?php
+                                echo $numacc;
+                                ?></h3>
+
                         </div>
-                        <div class="clearfix"> </div>
+                        <div class="clearfix"></div>
                     </div>
                 </div>
                 <div class="col-md-3 market-update-gd">
                     <div class="market-update-block clr-block-3">
                         <div class="col-md-4 market-update-right">
-                            <i class="fa fa-usd"></i>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         </div>
                         <div class="col-md-8 market-update-left">
-                            <h4>Sales</h4>
-                            <h3>1,500</h3>
-                            <p>Other hand, we denounce</p>
+                            <h4>Danh mục </h4>
+                            <h3><?php
+                                echo $numcate;
+                                ?></h3>
+
                         </div>
-                        <div class="clearfix"> </div>
+                        <div class="clearfix"></div>
                     </div>
                 </div>
                 <div class="col-md-3 market-update-gd">
@@ -71,76 +115,26 @@ include ("../module/sidebar.php");
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         </div>
                         <div class="col-md-8 market-update-left">
-                            <h4>Orders</h4>
-                            <h3>1,500</h3>
-                            <p>Other hand, we denounce</p>
+                            <h4>Sản phẩm</h4>
+                            <h3><?php
+                                echo $numproduct;
+                                ?></h3>
+
                         </div>
-                        <div class="clearfix"> </div>
+                        <div class="clearfix"></div>
                     </div>
                 </div>
-                <div class="clearfix"> </div>
+                <div class="clearfix"></div>
             </div>
 
 
-
-                <div class="col-md-8 stats-info stats-last widget-shadow">
-                    <div class="stats-last-agile">
-                        <table class="table stats-table ">
-                            <thead>
-                            <tr>
-                                <th>S.NO</th>
-                                <th>PRODUCT</th>
-                                <th>STATUS</th>
-                                <th>PROGRESS</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Lorem ipsum</td>
-                                <td><span class="label label-success">In progress</span></td>
-                                <td><h5>85% <i class="fa fa-level-up"></i></h5></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Aliquam</td>
-                                <td><span class="label label-warning">New</span></td>
-                                <td><h5>35% <i class="fa fa-level-up"></i></h5></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Lorem ipsum</td>
-                                <td><span class="label label-danger">Overdue</span></td>
-                                <td><h5 class="down">40% <i class="fa fa-level-down"></i></h5></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Aliquam</td>
-                                <td><span class="label label-info">Out of stock</span></td>
-                                <td><h5>100% <i class="fa fa-level-up"></i></h5></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Lorem ipsum</td>
-                                <td><span class="label label-success">In progress</span></td>
-                                <td><h5 class="down">10% <i class="fa fa-level-down"></i></h5></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>Aliquam</td>
-                                <td><span class="label label-warning">New</span></td>
-                                <td><h5>38% <i class="fa fa-level-up"></i></h5></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="clearfix"> </div>
+            <div class="clearfix"></div>
             </div>
         </section>
-<?php
-include ("../module/footer.php");
-?>
+        <!-- footer -->
+
+
+        <!-- / footer -->
     </section>
     <!--main content end-->
 </section>
@@ -240,4 +234,5 @@ include ("../module/footer.php");
 </script>
 <!-- //calendar -->
 </body>
+
 </html>

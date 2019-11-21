@@ -42,10 +42,19 @@ include("../module/header.php");
                         Danh sách tài khoản
                     </div>
                     <div>
-                        <table class="table" border="1" align="center">
+                        <table class="table" ui-jq="footable" ui-options='{
+        "paging": {
+          "enabled": true
+        },
+        "filtering": {
+          "enabled": true
+        },
+        "sorting": {
+          "enabled": true
+        }}'>
                             <thead>
                             <tr>
-                                <th align="center">ID</th>
+                                <th data-breakpoints="xs">ID</th>
                                 <th width="100px">Loại tài khoản</th>
                                 <th idth="100px">idShop</th>
                                 <th>usename</th>
@@ -57,7 +66,6 @@ include("../module/header.php");
                                 <th data-breakpoints="xs sm md" data-title="DOB">Email</th>
                                 <th data-breakpoints="xs sm md" data-title="DOB">Ngày sinh</th>
                                 <th data-breakpoints="xs sm md" data-title="DOB">Trạng thái</th>
-                                <th></th>
 
 
                             </tr>
@@ -102,12 +110,7 @@ include("../module/header.php");
                                         echo $row['address'] ?></td>
                                     <td>
                                         <?php
-                                        if ($row['gender'] == 1) {
-                                            echo "Nam";
-                                        } else {
-                                            echo "Nữ";
-                                        } ?>
-
+                                        echo $row['gender'] ?>
                                     </td>
                                     <td>
                                         <?php
@@ -127,11 +130,13 @@ include("../module/header.php");
                                     </td>
                                     <td>
 
-                                            <a href="del_account.php">
-                                                <img border="0" alt="" src="../../image/image/del.png" width="20" height="20">
-                                            </a>
+                                        <a href="del_account.php">
+                                            <img border="0" alt="" src="../../image/image/del.png" width="20"
+                                                 height="20">
+                                        </a>
                                         <a href="edit_account.php">
-                                            <img border="0" alt="" src="../../image/image/edit.png" width="20" height="20">
+                                            <img border="0" alt="" src="../../image/image/edit.png" width="20"
+                                                 height="20">
                                         </a>
 
                                     </td>

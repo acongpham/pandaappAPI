@@ -11,9 +11,23 @@
                 </li>
 
                 <li class="sub-menu">
-                    <a href="#">
+                    <a href="../controller/account.php">
                         <i class="fa fa-book"></i>
                         <span>Quản lý tài khoản</span>
+                    </a>
+
+                </li>
+                <li class="sub-menu">
+                    <a href="../controller/category.php">
+                        <i class="fa fa-book"></i>
+                        <span>Quản lý danh mục</span>
+                    </a>
+
+                </li>
+                <li class="sub-menu">
+                    <a href="../controller/category.php">
+                        <i class="fa fa-book"></i>
+                        <span>Quản lý tin tức</span>
                     </a>
 
                 </li>

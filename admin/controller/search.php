@@ -39,7 +39,7 @@ include("../module/header.php");
             <div class="table-agile-info">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Danh sách tài khoản
+                        Kết quả tìm kiếm
                     </div>
                     <div>
                         <table class="table" border="1" align="center">
@@ -127,9 +127,9 @@ include("../module/header.php");
                                     </td>
                                     <td>
 
-                                            <a href="del_account.php">
-                                                <img border="0" alt="" src="../../image/image/del.png" width="20" height="20">
-                                            </a>
+                                        <a href="del_account.php">
+                                            <img border="0" alt="" src="../../image/image/del.png" width="20" height="20">
+                                        </a>
                                         <a href="edit_account.php">
                                             <img border="0" alt="" src="../../image/image/edit.png" width="20" height="20">
                                         </a>
