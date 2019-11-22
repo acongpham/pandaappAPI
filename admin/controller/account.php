@@ -9,8 +9,13 @@ if (!isset($_SESSION['admin_login'])) {
 include("../../config/dbcon.php");
 $query = "SELECT * FROM account";
 $data = mysqli_query($conn, $query);
-
-
+$totalAccount = mysqli_num_rows($data);
+$limit = 10;
+$getpage=!empty($_GET['page'])? $_GET['page']:1;
+$start = ($getpage-1)*$limit;
+$page = ceil($totalAccount / $limit);
+$query1 = "SELECT * FROM account LIMIT $start,$limit";
+$data1 = mysqli_query($conn, $query1);
 ?>
 
 
@@ -41,7 +46,7 @@ include("../module/header.php");
                     <div class="panel-heading">
                         Danh sách tài khoản
                     </div>
-                    <div>
+                    <div >
                         <table class="table" border="1" align="center">
                             <thead>
                             <tr>
@@ -64,7 +69,7 @@ include("../module/header.php");
                             </thead>
                             <tbody>
                             <?php
-                            while ($row = mysqli_fetch_assoc($data)) {
+                            while ($row = mysqli_fetch_assoc($data1)) {
                                 ?>
                                 <tr data-expanded="true">
                                     <td>
@@ -127,11 +132,13 @@ include("../module/header.php");
                                     </td>
                                     <td>
 
-                                            <a href="del_account.php">
-                                                <img border="0" alt="" src="../../image/image/del.png" width="20" height="20">
-                                            </a>
+                                        <a href="del_account.php">
+                                            <img border="0" alt="" src="../../image/image/del.png" width="20"
+                                                 height="20">
+                                        </a>
                                         <a href="edit_account.php">
-                                            <img border="0" alt="" src="../../image/image/edit.png" width="20" height="20">
+                                            <img border="0" alt="" src="../../image/image/edit.png" width="20"
+                                                 height="20">
                                         </a>
 
                                     </td>
@@ -143,6 +150,16 @@ include("../module/header.php");
 
                             </tbody>
                         </table>
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a></li>
+                            <?php for ($i=1;$i<=$page;$i++) :
+                                $active=$getpage==$i? 'class="active"': '';
+                                ?>
+
+                                <li <?php echo  $active;?>><a href="account.php?m=post&page=<?php echo $i;?>"><?php echo $i;?></a></li>
+                            <?php endfor; ?>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -151,10 +168,10 @@ include("../module/header.php");
             <!--            End nội dung chính-->
 
         </section>
-        <?php
-        include("../module/footer.php");
-        ?>
+
+
     </section>
+
     <!--main content end-->
 </section>
 <script src="js/bootstrap.js"></script>

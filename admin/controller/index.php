@@ -63,7 +63,7 @@ include("../module/header.php");
         <section class="wrapper">
             <!-- //market-->
             <div class="market-updates">
-                <div class="col-md-3 market-update-gd">
+                <div class="col-md-3 market-update-gd" onclick="location.href='shop.php'">
                     <div class="market-update-block clr-block-2">
                         <div class="col-md-4 market-update-right">
                             <i class="fa fa-users"></i>
@@ -79,7 +79,7 @@ include("../module/header.php");
                         <div class="clearfix"></div>
                     </div>
                 </div>
-                <div class="col-md-3 market-update-gd">
+                <div class="col-md-3 market-update-gd" onclick="location.href='account.php'">
                     <div class="market-update-block clr-block-1">
                         <div class="col-md-4 market-update-right">
                             <i class="fa fa-users"></i>
@@ -94,7 +94,7 @@ include("../module/header.php");
                         <div class="clearfix"></div>
                     </div>
                 </div>
-                <div class="col-md-3 market-update-gd">
+                <div class="col-md-3 market-update-gd" onclick="location.href='category.php'">
                     <div class="market-update-block clr-block-3">
                         <div class="col-md-4 market-update-right">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -109,7 +109,7 @@ include("../module/header.php");
                         <div class="clearfix"></div>
                     </div>
                 </div>
-                <div class="col-md-3 market-update-gd">
+                <div class="col-md-3 market-update-gd" onclick="location.href='product.php'">
                     <div class="market-update-block clr-block-4">
                         <div class="col-md-4 market-update-right">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>

@@ -2,16 +2,112 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/controller/account.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/controller/basic_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/controller/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/controller/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/module/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/module/header-body.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/module/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/module/sidebar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/controller/product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/controller/shop.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/dbcon.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/dbcon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InsertImageProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/InsertImageProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InsertProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/InsertProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/checkAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/editProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getFavoriteItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/getFavoriteItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/getProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getProductBySearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/getProductBySearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getProductofShop.php" beforeDir="false" afterPath="$PROJECT_DIR$/getProductofShop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/ERD11573226776671.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/ERD11573229069435.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/ERD11573230293398.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/ERD11573235360499.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/ERD11573235428983.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/ERD1573226287881.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/ERD1573229069468.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/ERD1573235428996.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20180226_134906_HDR1573235360557.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20180226_134922_HDR1573226776711.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20180226_134957_HDR1573226776776.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20180226_134957_HDR1573235360612.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573205364993.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573226776617.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573229069387.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573229183126.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573229988805.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573231770121.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573231857983.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573232229511.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573232284207.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573232554035.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573233520896.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573233639633.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573233716220.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573234175641.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573234455982.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573235030526.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573235152652.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573235201022.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573235290627.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553001573235334311.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573203665119.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573205312970.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573205387026.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573223802371.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573226776640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573227796830.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573229069404.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573229183178.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573229263709.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573229770564.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573229988833.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573230161712.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573231770138.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573231857998.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573232229523.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573232284227.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573232554048.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573233520915.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573233639647.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573234455999.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573235030547.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573235152674.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573235201044.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573235290668.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573235334345.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1553011573727369493.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226361573118324066.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226361573136014054.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226381573136014043.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226381573218692640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226381573218755938.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226381573218758811.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226381573218764935.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226381573218849429.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226381573219283708.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226381573219287322.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226381573219309221.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226381573219429723.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226401573136014065.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226401573218692669.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226401573218755960.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226401573218758831.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226401573218764952.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226401573218849447.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226401573219283727.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226401573219287340.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226401573219309242.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191107_1226401573219429746.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/img1573223281803.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/img1573226287917.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/img1573231517162.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/img1573235360592.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/img1573235429028.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/img1573727416111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/sodoquanhe1573226776732.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/sodoquanhe1573229069485.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/sodoquanhe1573230293421.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/sodoquanhe1573231517150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ImageProduct/sodoquanhe1573235429017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/searchProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/searchProduct.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +128,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/controller" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/admin/controller" />
       <recent name="D:\InstalllToC\xampp\htdocs\pandaapAPI" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -52,29 +151,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.login.php">
+  <component name="RunManager" selected="JavaScript Debug.product.php">
     <configuration name="account.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/admin/controller/account.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="basic_table.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/admin/basic_table.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="basic_table.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/admin/controller/basic_table.php" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="getOrderofCustomers.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaapAPI/getOrderofCustomers.php" useBuiltInWebServerPort="true">
+    <configuration name="checkAccount.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/checkAccount.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="login.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/admin/controller/login.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="product.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/admin/controller/product.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="shop.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/admin/controller/shop.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.login.php" />
-        <item itemvalue="JavaScript Debug.basic_table.php" />
+        <item itemvalue="JavaScript Debug.product.php" />
+        <item itemvalue="JavaScript Debug.shop.php" />
         <item itemvalue="JavaScript Debug.account.php" />
-        <item itemvalue="JavaScript Debug.basic_table.html" />
-        <item itemvalue="JavaScript Debug.getOrderofCustomers.php" />
+        <item itemvalue="JavaScript Debug.checkAccount.php" />
+        <item itemvalue="JavaScript Debug.login.php" />
       </list>
     </recent_temporary>
   </component>
@@ -111,6 +210,9 @@
       <workItem from="1573991605018" duration="3354000" />
       <workItem from="1574182258315" duration="1588000" />
       <workItem from="1574235866621" duration="9141000" />
+      <workItem from="1574346508430" duration="5445000" />
+      <workItem from="1574356673148" duration="1617000" />
+      <workItem from="1574407509484" duration="17541000" />
     </task>
     <servers />
   </component>

@@ -3,7 +3,7 @@ include 'config/dbcon.php';
 include 'EntityClass.php';
 
 $useraccount = $_POST['usernameaccount'];
-$passwordaccount = $_POST['passwordaccount'];
+$passwordaccount = MD5($_POST['passwordaccount']);
 
 
 

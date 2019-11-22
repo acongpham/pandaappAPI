@@ -1,8 +1,8 @@
 <?php
 include 'config/dbcon.php';
 $accountID=9; // set cứng, khi code thì truyền biến
-$query="select oder.oderId,product.name,oder_item.amount, shop.shopName,statusId,date_created, totalPrice from Oder inner join Oder_Item on Oder.oderId = Oder_Item.oderId
-					inner join Product on Oder_Item.productId=Product.productId
+$query="select oder.oderId,product.name,oder_item.amount, shop.shopName,statusId,date_created, totalPrice from oder inner join oder_Item on oder.oderId = oder_Item.oderId
+					inner join product on  oder_Item.productId=product.productId
                     INNER JOIN shop on shop.idShop=product.idShop
 					where oder.AccountId='".$accountID."'";
 ;

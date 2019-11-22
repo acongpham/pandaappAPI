@@ -4,7 +4,7 @@ include 'EntityClass.php';
 
 $key = $_POST['key'];
 //$key = 'ao';
-$query = "select productId,product.name,price,product.discount,shop.shopName,shop.idShop,product.detail from Product inner join Shop on Product.idShop=Shop.idShop 
+$query = "select productId,product.name,price,product.discount,shop.shopName,shop.idShop,product.detail from product inner join shop on product.idShop=shop.idShop 
 inner join account on shop.idShop=account.idShop 
 WHERE account.accountStatus=1 AND product.name like'%$key%' OR shop.shopName like '%$key%'";
 $data = mysqli_query($conn, $query);

@@ -4,7 +4,7 @@ include 'EntityClass.php';
 
 $key = $_POST['idShop'];
 //$key = 1;
-$query = "select productId,name,price,product.discount,shop.shopName,shop.idShop,product.detail from Product 
+$query = "select productId,name,price,product.discount,shop.shopName,shop.idShop,product.detail from product 
 INNER JOIN shop on shop.idShop=product.idShop
 where product.idShop=$key";
 $data = mysqli_query($conn, $query);

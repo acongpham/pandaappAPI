@@ -2,7 +2,7 @@
 include 'config/dbcon.php';
 include 'EntityClass.php';
 $key = $_POST['productId'];
-$query = "select productId,name,price,product.discount,shop.shopName,shop.idShop,product.detail from Product 
+$query = "select productId,name,price,product.discount,shop.shopName,shop.idShop,product.detail from product 
 INNER JOIN shop on shop.idShop=product.idShop
 where productId='$key'";
 $data = mysqli_query($conn, $query);
