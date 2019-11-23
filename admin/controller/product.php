@@ -5,20 +5,23 @@ if (!isset($_SESSION['admin_login'])) {
     header('location:login.php');
 
 }
-$key = 1;
+
+$key = $_GET['usename'];
 include("../../config/dbcon.php");
-$query = "select productId,name,price,product.discount,shop.shopName,shop.idShop,product.detail from product 
+$query = "select productId,product.name,price,product.discount,shop.shopName,shop.idShop,product.detail from product 
 INNER JOIN shop on shop.idShop=product.idShop
-where product.idShop=$key";
+INNER JOIN account on shop.idShop=account.idShop
+where account.usename='$key'";
 $data = mysqli_query($conn, $query);
 $totalAccount = mysqli_num_rows($data);
 $limit = 5;
 $getpage = !empty($_GET['page']) ? $_GET['page'] : 1;
 $start = ($getpage - 1) * $limit;
 $page = ceil($totalAccount / $limit);
-$query1 = "select productId,name,price,product.discount,shop.shopName,shop.idShop,product.detail from product 
+$query1 = "select productId,product.name,price,product.discount,shop.shopName,shop.idShop,product.detail from product 
 INNER JOIN shop on shop.idShop=product.idShop
-where product.idShop=$key LIMIT $start,$limit";
+INNER JOIN account on shop.idShop=account.idShop
+where account.usename='$key' LIMIT $start,$limit";
 $data1 = mysqli_query($conn, $query1);
 
 ?>

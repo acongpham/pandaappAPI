@@ -40,7 +40,6 @@ include("../module/header.php");
     <section id="main-content">
         <section class="wrapper">
             <!--nội dung chính-->
-
             <div class="table-agile-info">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -50,18 +49,18 @@ include("../module/header.php");
                         <table class="table" border="1" align="center">
                             <thead>
                             <tr>
-                                <th align="center">ID</th>
-                                <th width="100px">Loại tài khoản</th>
-                                <th idth="100px">idShop</th>
-                                <th>usename</th>
-                                <th>Họ tên</th>
-                                <th>Số điện thoại</th>
-                                <th>Địa chỉ</th>
-                                <th data-breakpoints="xs">Giới tính</th>
+                                <th align="center" style="width: 10%">ID</th>
+                                <th  style="width: 10%">Loại tài khoản</th>
+                                <th style="width: 10%">idShop</th>
+                                <th style="width: 10%">usename</th>
+                                <th style="width: 10%">Họ tên</th>
+                                <th style="width: 10%">Số điện thoại</th>
+                                <th style="width: 10%">Địa chỉ</th>
+                                <th style="width: 10%">Giới tính</th>
 
-                                <th data-breakpoints="xs sm md" data-title="DOB">Email</th>
-                                <th data-breakpoints="xs sm md" data-title="DOB">Ngày sinh</th>
-                                <th data-breakpoints="xs sm md" data-title="DOB">Trạng thái</th>
+                                <th data-breakpoints="xs sm md" data-title="DOB" style="width: 10%">Email</th>
+                                <th data-breakpoints="xs sm md" data-title="DOB" style="width: 10%">Ngày sinh</th>
+                                <th data-breakpoints="xs sm md" data-title="DOB" style="width: 10%">Trạng thái</th>
                                 <th></th>
 
 
@@ -132,7 +131,11 @@ include("../module/header.php");
                                     </td>
                                     <td>
 
-                                        <a href="del_account.php">
+                                        <a href="del_account.php?m=post&AccountId=<?php echo $row['AccountId'];?>&role=<?php
+                                        echo $row['roleId'];
+                                        ?>" onclick="return confirm('Chắc chắn xóa tài khoản <?php
+                                        echo $row['usename'];
+                                        ?>?')">
                                             <img border="0" alt="" src="../../image/image/del.png" width="20"
                                                  height="20">
                                         </a>

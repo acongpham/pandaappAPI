@@ -25,6 +25,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src="js/jquery2.0.3.min.js"></script>
     <script src="js/raphael-min.js"></script>
     <script src="js/morris.js"></script>
+    <script language="JavaScript" type="text/javascript">
+        function checkDeleteAccount(){
+
+            return confirm('Chắc chắn xóa tài khoản này?');
+        }
+    </script>
 </head>
 <body>
 <section id="container">

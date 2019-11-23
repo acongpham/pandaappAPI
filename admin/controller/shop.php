@@ -142,7 +142,9 @@ include("../module/sidebar.php");
 
                                 </td>
                                 <td>
-                                    <a href="product.php">
+                                    <a href="product.php?m=post&usename=<?php
+                                    echo $row['usename'];
+                                    ?>">
                                         <img border="0" alt="" src="../../image/image/show.png" width="20"
                                              height="20">
                                     </a>
