@@ -38,15 +38,16 @@ include("../module/header.php");
     <!--sidebar end-->
     <!--main content start-->
     <section id="main-content">
-        <section class="wrapper">
+        <section class="wrapper " style="width: 90%; ">
             <!--nội dung chính-->
+
             <div class="table-agile-info">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Danh sách tài khoản
                     </div>
                     <div >
-                        <table class="table" border="1" align="center">
+                        <table class="table-bordered table-hover" align="center">
                             <thead>
                             <tr>
                                 <th align="center" style="width: 10%">ID</th>

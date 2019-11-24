@@ -35,11 +35,13 @@ include("../module/header.php");
     <section id="main-content">
         <section class="wrapper">
             <!--nội dung chính-->
+            <button class="btn-default"> <a href="#" >Thêm Cate</a></button>
 
             <div>
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Danh mục sản phẩm
+
                     </div>
                     <div align="center">
                         <table  border="1" >
@@ -86,11 +88,7 @@ include("../module/header.php");
 
                                     <td>
 
-                                        <a href="del_account.php">
-                                            <img border="0" alt="" src="../../image/image/del.png" width="20"
-                                                 height="20">
-                                        </a>
-                                        <a href="edit_account.php">
+                                        <a href="editCategory.php?id=<?php echo $row['idcategory']?>">
                                             <img border="0" alt="" src="../../image/image/edit.png" width="20"
                                                  height="20">
                                         </a>
