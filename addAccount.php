@@ -18,7 +18,7 @@ if ($row === 0) {
     $idrole = $_POST['idrole'];
     $idShop = $last_id;
     $txtusername = $_POST['txtusername'];
-    $txtpassword = $_POST['txtpassword'];
+    $txtpassword = MD5($_POST['txtpassword']);
     $txtnamefull = $_POST['txtnamefull'];
     $txtphone = $_POST['txtphone'];
     $txtaddress = $_POST['txtaddress'];

@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controller/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controller/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controller/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/addAccount.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,11 +47,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.search.php">
+  <component name="RunManager" selected="JavaScript Debug.index.php">
     <configuration name="account.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/admin/controller/account.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="editCategory.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaapAPI/admin/controller/editCategory.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/admin/controller/index.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="product.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/admin/controller/product.php" useBuiltInWebServerPort="true">
@@ -62,16 +63,13 @@
     <configuration name="search.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaapAPI/admin/controller/search.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="shop.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/admin/controller/shop.php" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.php" />
         <item itemvalue="JavaScript Debug.search.php" />
         <item itemvalue="JavaScript Debug.editCategory.php" />
         <item itemvalue="JavaScript Debug.account.php" />
         <item itemvalue="JavaScript Debug.product.php" />
-        <item itemvalue="JavaScript Debug.shop.php" />
       </list>
     </recent_temporary>
   </component>
@@ -113,6 +111,7 @@
       <workItem from="1574407509484" duration="19568000" />
       <workItem from="1574438917937" duration="3429000" />
       <workItem from="1574561075116" duration="14322000" />
+      <workItem from="1574653153304" duration="617000" />
     </task>
     <servers />
   </component>
