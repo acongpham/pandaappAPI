@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/checkAccountFB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/addAccount.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,16 +23,17 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/admin/controller" />
-      <recent name="D:\InstalllToC\xampp\htdocs\pandaapAPI" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/admin/controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/admin/controller" />
+      <recent name="D:\InstalllToC\xampp\htdocs\pandaapAPI" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -112,6 +113,8 @@
       <workItem from="1574438917937" duration="3429000" />
       <workItem from="1574561075116" duration="14322000" />
       <workItem from="1574653153304" duration="617000" />
+      <workItem from="1574953854505" duration="288000" />
+      <workItem from="1574988021796" duration="2080000" />
     </task>
     <servers />
   </component>
