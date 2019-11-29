@@ -91,5 +91,19 @@ class Account
 
 	}
 }
+class News
+
+{
+
+	function News($newsId,$newstitle,$detailNews,$imageNews,$dateCreated)
+	{
+		$this->newsId=$newsId;
+		$this->newstitle=$newstitle;
+		$this->detailNews=$detailNews;
+		$this->imageNews=$imageNews;
+		$this->dateCreated=$dateCreated;
+
+	}
+}
 
 ?>
