@@ -16,15 +16,7 @@
                 
 	}
 }
-class Shop
-{
 
-	function Shop($idShop,$shopName)
-	{
-		$this->idShop=$idShop;
-		$this->shopName=$shopName;
-			}
-}
 class OrderShop
 
 {
@@ -125,6 +117,22 @@ class News
 		$this->detailNews=$detailNews;
 		$this->imageNews=$imageNews;
 		$this->dateCreated=$dateCreated;
+
+	}
+}
+
+class Shop
+
+{
+
+	function Shop($idShop,$shopName,$introduce,$address,$phone,$email)
+	{
+		$this->idShop=$idShop;
+		$this->shopName=$shopName;
+		$this->introduce=$introduce;
+		$this->address=$address;
+		$this->phone=$phone;
+		$this->email=$email;
 
 	}
 }

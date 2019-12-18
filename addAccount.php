@@ -7,20 +7,33 @@ $querycheckexistaccount = "select * from account where account.usename='$txtuser
 $result = mysqli_query($conn, $querycheckexistaccount);
 $row = mysqli_num_rows($result);
 if ($row === 0) {
-    $shopName = $_POST['shopName'];
-    $introduceshop = $_POST['introduceshop'];
-    $addressshop = $_POST['addressshop'];
-    $phoneshop = $_POST['phoneshop'];
-    $emailshop = $_POST['emailshop'];
-
-    $queryaddshop = "INSERT INTO shop (shopName,introduce,address,phone,email) VALUES ('$shopName','$introduceshop','$addressshop','$phoneshop',$emailshop)";
-    if ($conn->query($queryaddshop) === TRUE) {
-        $last_id = $conn->insert_id;
-
-    } else {
-        $last_id = 0;
-    }
     $idrole = $_POST['idrole'];
+
+    switch ($idrole) {
+        case "1":
+            $last_id = null;
+            break;
+        case "2":
+            $shopName = $_POST['shopName'];
+            $introduceshop = $_POST['introduceshop'];
+            $addressshop = $_POST['addressshop'];
+            $phoneshop = $_POST['phoneshop'];
+            $emailshop = $_POST['emailshop'];
+
+            $queryaddshop = "INSERT INTO shop (shopName,introduce,address,phone,email) VALUES ('$shopName','$introduceshop','$addressshop','$phoneshop',$emailshop)";
+            if ($conn->query($queryaddshop) === TRUE) {
+                $last_id = $conn->insert_id;
+
+
+            } else {
+                $last_id = null;
+
+            }
+            break;
+
+    }
+
+
     $idShop = $last_id;
     $txtusername = $_POST['txtusername'];
     $txtpassword = MD5($_POST['txtpassword']);

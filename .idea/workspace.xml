@@ -2,37 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/getDetailRevenueShop.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getListRevenueShop.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getOrderItemDetail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getTotalRevenueShop.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Changepassword.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EditShop.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OpenShop.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addAccount1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getInfoShop.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/EditAccount.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EntityClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/EntityClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InsertBill.php" beforeDir="false" afterPath="$PROJECT_DIR$/InsertBill.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/addAccount.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getOrderItemShop.php" beforeDir="false" afterPath="$PROJECT_DIR$/getOrderItemShop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getOrderShop.php" beforeDir="false" afterPath="$PROJECT_DIR$/getOrderShop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getOrderofCustomers.php" beforeDir="false" afterPath="$PROJECT_DIR$/getOrderofCustomers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getProductBySearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/getProductBySearch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getProductofShop.php" beforeDir="false" afterPath="$PROJECT_DIR$/getProductofShop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getallProductCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/getallProductCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20190407_1551171574953989762.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191120_1421421574355552250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191120_1421421574355751595.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191120_1421421574356041995.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191120_1421431574356042052.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191120_1421451574356042035.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191120_1421451574356579554.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191120_1421461574355801544.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191120_1421461574355969653.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191120_1421461574356042016.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191120_1421461574356579534.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191120_142146_11574355801567.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191120_142146_11574355969675.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191120_142146_11574356042069.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191120_142146_11574356579580.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ImageProduct/IMG_20191120_142146_11574656297900.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,29 +48,29 @@
       <recent name="$PROJECT_DIR$/admin/controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.getOrderItemDetail.php">
-    <configuration name="getDetailRevenueShop.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/getDetailRevenueShop.php" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.getInfoShop.php">
+    <configuration name="Changepassword.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaappAPI/Changepassword.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="getListRevenueShop.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaappAPI/getListRevenueShop.php" useBuiltInWebServerPort="true">
+    <configuration name="EditAccount.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaappAPI/EditAccount.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="OpenShop.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaappAPI/OpenShop.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="getInfoShop.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaappAPI/getInfoShop.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="getOrderItemDetail.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/getOrderItemDetail.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="getOrderItemShop.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/getOrderItemShop.php" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="test.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/test.php" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.getInfoShop.php" />
+        <item itemvalue="JavaScript Debug.Changepassword.php" />
+        <item itemvalue="JavaScript Debug.EditAccount.php" />
+        <item itemvalue="JavaScript Debug.OpenShop.php" />
         <item itemvalue="JavaScript Debug.getOrderItemDetail.php" />
-        <item itemvalue="JavaScript Debug.getOrderItemShop.php" />
-        <item itemvalue="JavaScript Debug.getListRevenueShop.php" />
-        <item itemvalue="JavaScript Debug.test.php" />
-        <item itemvalue="JavaScript Debug.getDetailRevenueShop.php" />
       </list>
     </recent_temporary>
   </component>
@@ -162,6 +140,8 @@
       <workItem from="1576395928372" duration="8274000" />
       <workItem from="1576486009309" duration="2605000" />
       <workItem from="1576547236824" duration="13257000" />
+      <workItem from="1576640257257" duration="11389000" />
+      <workItem from="1576659835340" duration="6547000" />
     </task>
     <servers />
   </component>
@@ -186,11 +166,11 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="774" y="449" width="362" height="157" key="NewPhpFileDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1576411589896" />
-    <state x="630" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1576595358144">
+    <state x="630" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1576660342482">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="630" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575711053685" />
-    <state x="630" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1576595358144" />
+    <state x="630" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1576660342482" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
