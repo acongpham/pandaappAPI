@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Changepassword.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EditShop.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenShop.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addAccount1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getInfoShop.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EditAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/EditAccount.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EntityClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/EntityClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/addAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/NewsInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/NewsInsert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/news.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +136,7 @@
       <workItem from="1576547236824" duration="13257000" />
       <workItem from="1576640257257" duration="11389000" />
       <workItem from="1576659835340" duration="6547000" />
+      <workItem from="1576649298878" duration="205000" />
     </task>
     <servers />
   </component>

@@ -7,14 +7,14 @@ if (!isset($_SESSION['admin_login'])) {
 }
 
 include("../../config/dbcon.php");
-$query = "SELECT * FROM News";
+$query = "SELECT * FROM news";
 $data = mysqli_query($conn, $query);
 $totalNews = mysqli_num_rows($data);
 $limit = 10;
 $getpage=!empty($_GET['page'])? $_GET['page']:1;
 $start = ($getpage-1)*$limit;
 $page = ceil($totalNews / $limit);
-$query1 = "SELECT * FROM News LIMIT $start,$limit";
+$query1 = "SELECT * FROM news LIMIT $start,$limit";
 $data1 = mysqli_query($conn, $query1);
 ?>
 
@@ -38,9 +38,10 @@ include("../module/header.php");
     <!--sidebar end-->
     <!--main content start-->
     <section id="main-content">
+    
         <section class="wrapper " style="width: 90%; ">
             <!--nội dung chính-->
-
+            <a href="NewsInsert.php" class="btn btn-success"> Thêm tin tức</a>
             <div class="table-agile-info">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -78,8 +79,8 @@ include("../module/header.php");
                                         echo $row['detailNews'] ?>
                                     </td>
                                     <td>
-                                        <?php
-                                        echo $row['imageNews'] ?>
+                                       <img src="<?php
+                                        echo '../../'.$row['imageNews'] ?>" height="300px" width="300px" />
                                     </td>
                                     <td>
                                         <?php

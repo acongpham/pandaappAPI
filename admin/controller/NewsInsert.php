@@ -12,12 +12,32 @@ include("../../config/dbcon.php");
 
 if(isset($_POST['uploadnews']))
 {
+    if (isset($_FILES['avatar']))
+    {
+        // Nếu file upload không bị lỗi,
+        // Tức là thuộc tính error > 0
+        if ($_FILES['avatar']['error'] > 0)
+        {
+            echo 'File Upload Bị Lỗi';
+        }
+        else{
+            // Upload file
+            $file_path = "image/news/";
+            move_uploaded_file($_FILES['avatar']['tmp_name'], '../../image/news/'.$_FILES['avatar']['name']);
+            $file_path = $file_path.basename($_FILES['avatar']['name']);
+            
+        }
+    }
+    else{
+        echo 'Bạn chưa chọn file upload';
+    }
+
     $titleNews = $_POST['titleNews'] ;
     $detailNews = $_POST['detailNews'];
-    $query = "INSERT INTO `news`(`newstitle`, `detailNews`, `imageNews`, `dateCreated`) VALUES ('$titleNews','$detailNews','',NOW())";
+    $query = "INSERT INTO `news`(`newstitle`, `detailNews`, `imageNews`, `dateCreated`) VALUES ('$titleNews','$detailNews','$file_path',NOW())";
     $data = mysqli_query($conn,$query);
 }else{
-
+    echo 'loi';
 }
 
 
@@ -50,23 +70,28 @@ include("../module/header.php");
                 <div class="panel panel-default">
                     <div class="panel-heading">Thêm tin tức</div>
                     <div class="panel-body">
-                        <form action="news.php" enctype="multipart/form-data" method="post">
+                        <form action="newsinsert.php" enctype="multipart/form-data" method="post">
 
 
                             <div class="form-group">
                                 <label>Tiêu đề tin tức:</label>
                                 <input type="text" class="form-control" name="titleNews" value="">
                             </div>
+                            <div class="form-group">
+                                <label>Ảnh tiêu đề: </label>
+                               
+                            <input type="file" class="form-control" name="avatar"  >
+                            </div>
                             <script src="../ckeditor/ckeditor.js" type="text/javascript"></script>
                             <div class="form-group">
-                                <label>Tin tức</label>
+                                <label>Nội dung tin tức</label>
                                 <textarea id="editor1" name="detailNews" class="ckeditor"></textarea>
                                 <script>
                                     CKEDITOR.replace( 'editor1' );
                                 </script>
                             </div>
 
-                            <button type="submit" class="btn btn-default" name="uploadnews">Submit</button>
+                            <button type="submit" class="btn btn-default" name="uploadnews">Thêm</button>
 
 
                         </form>
