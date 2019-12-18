@@ -7,10 +7,15 @@ if (!isset($_SESSION['admin_login'])) {
 }
 
 include("../../config/dbcon.php");
-$query = "SELECT * FROM account";
+$query = "SELECT * FROM News";
 $data = mysqli_query($conn, $query);
-
-
+$totalNews = mysqli_num_rows($data);
+$limit = 10;
+$getpage=!empty($_GET['page'])? $_GET['page']:1;
+$start = ($getpage-1)*$limit;
+$page = ceil($totalNews / $limit);
+$query1 = "SELECT * FROM News LIMIT $start,$limit";
+$data1 = mysqli_query($conn, $query1);
 ?>
 
 
@@ -33,104 +38,61 @@ include("../module/header.php");
     <!--sidebar end-->
     <!--main content start-->
     <section id="main-content">
-        <section class="wrapper">
+        <section class="wrapper " style="width: 90%; ">
             <!--nội dung chính-->
 
             <div class="table-agile-info">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Danh sách tài khoản
+                        Danh sách tin tức
                     </div>
-                    <div>
-                        <table class="table" ui-jq="footable" ui-options='{
-        "paging": {
-          "enabled": true
-        },
-        "filtering": {
-          "enabled": true
-        },
-        "sorting": {
-          "enabled": true
-        }}'>
+                    <div >
+                        <table class="table-bordered table-hover" align="center">
                             <thead>
                             <tr>
-                                <th data-breakpoints="xs">ID</th>
-                                <th width="100px">Loại tài khoản</th>
-                                <th idth="100px">idShop</th>
-                                <th>usename</th>
-                                <th>Họ tên</th>
-                                <th>Số điện thoại</th>
-                                <th>Địa chỉ</th>
-                                <th data-breakpoints="xs">Giới tính</th>
-
-                                <th data-breakpoints="xs sm md" data-title="DOB">Email</th>
-                                <th data-breakpoints="xs sm md" data-title="DOB">Ngày sinh</th>
-                                <th data-breakpoints="xs sm md" data-title="DOB">Trạng thái</th>
-
+                                <th align="center" style="width: 10%">ID</th>
+                                <th  style="width: 10%">Tiêu đề</th>
+                                <th style="width: 10%">Nội dung</th>
+                                <th style="width: 10%">Ảnh</th>
+                                <th style="width: 10%">Ngày tạo</th>
 
                             </tr>
                             </thead>
                             <tbody>
                             <?php
-                            while ($row = mysqli_fetch_assoc($data)) {
+                            while ($row = mysqli_fetch_assoc($data1)) {
                                 ?>
                                 <tr data-expanded="true">
                                     <td>
                                         <?php
-                                        echo $row['AccountId'] ?>
+                                        echo $row['newsId'] ?>
                                     </td>
                                     <td>
                                         <?php
-                                        if ($row['roleId'] == 1) {
-                                            echo "Mua";
+                                        echo $row['newstitle'] ;
 
-                                        } else {
-                                            echo "Bán";
+                                         ?>
+                                    </td>
+                                    <td>
+                                        <?php
+                                        echo $row['detailNews'] ?>
+                                    </td>
+                                    <td>
+                                        <?php
+                                        echo $row['imageNews'] ?>
+                                    </td>
+                                    <td>
+                                        <?php
+                                        echo $row['dateCreated'] ?>
+                                    </td>
 
-                                        } ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        echo $row['idShop'] ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        echo $row['usename'] ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        echo $row['name'] ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        echo $row['phone_number'] ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        echo $row['address'] ?></td>
-                                    <td>
-                                        <?php
-                                        echo $row['gender'] ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        echo $row['email'] ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        echo $row['DateOfBirth'] ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        if ($row['accountStatus'] == 1) {
-                                            echo "Hoạt động";
-                                        } else {
-                                            echo "Ngừng hoạt động ";
-                                        } ?>
-                                    </td>
                                     <td>
 
-                                        <a href="del_account.php">
+                                        <a href="del_account.php?m=post&AccountId=<?php echo $row['AccountId'];?>&role=<?php
+                                        echo $row['roleId'];
+                                        ?>" onclick="return confirm('Chắc chắn xóa tài khoản <?php
+                                        echo $row['usename'];
+                                        ?>?')">
                                             <img border="0" alt="" src="../../image/image/del.png" width="20"
                                                  height="20">
                                         </a>
@@ -148,6 +110,16 @@ include("../module/header.php");
 
                             </tbody>
                         </table>
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a></li>
+                            <?php for ($i=1;$i<=$page;$i++) :
+                                $active=$getpage==$i? 'class="active"': '';
+                                ?>
+
+                                <li <?php echo  $active;?>><a href="news.php?m=post&page=<?php echo $i;?>"><?php echo $i;?></a></li>
+                            <?php endfor; ?>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -156,10 +128,10 @@ include("../module/header.php");
             <!--            End nội dung chính-->
 
         </section>
-        <?php
-        include("../module/footer.php");
-        ?>
+
+
     </section>
+
     <!--main content end-->
 </section>
 <script src="js/bootstrap.js"></script>
@@ -168,95 +140,4 @@ include("../module/header.php");
 <script src="js/jquery.slimscroll.js"></script>
 <script src="js/jquery.nicescroll.js"></script>
 <!--[if lte IE 8]>
-<script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
-<script src="js/jquery.scrollTo.js"></script>
-<!-- morris JavaScript -->
-<script>
-    $(document).ready(function () {
-        //BOX BUTTON SHOW AND CLOSE
-        jQuery('.small-graph-box').hover(function () {
-            jQuery(this).find('.box-button').fadeIn('fast');
-        }, function () {
-            jQuery(this).find('.box-button').fadeOut('fast');
-        });
-        jQuery('.small-graph-box .box-close').click(function () {
-            jQuery(this).closest('.small-graph-box').fadeOut(200);
-            return false;
-        });
-
-        //CHARTS
-        function gd(year, day, month) {
-            return new Date(year, month - 1, day).getTime();
-        }
-
-        graphArea2 = Morris.Area({
-            element: 'hero-area',
-            padding: 10,
-            behaveLikeLine: true,
-            gridEnabled: false,
-            gridLineColor: '#dddddd',
-            axes: true,
-            resize: true,
-            smooth: true,
-            pointSize: 0,
-            lineWidth: 0,
-            fillOpacity: 0.85,
-            data: [
-                {period: '2015 Q1', iphone: 2668, ipad: null, itouch: 2649},
-                {period: '2015 Q2', iphone: 15780, ipad: 13799, itouch: 12051},
-                {period: '2015 Q3', iphone: 12920, ipad: 10975, itouch: 9910},
-                {period: '2015 Q4', iphone: 8770, ipad: 6600, itouch: 6695},
-                {period: '2016 Q1', iphone: 10820, ipad: 10924, itouch: 12300},
-                {period: '2016 Q2', iphone: 9680, ipad: 9010, itouch: 7891},
-                {period: '2016 Q3', iphone: 4830, ipad: 3805, itouch: 1598},
-                {period: '2016 Q4', iphone: 15083, ipad: 8977, itouch: 5185},
-                {period: '2017 Q1', iphone: 10697, ipad: 4470, itouch: 2038},
-
-            ],
-            lineColors: ['#eb6f6f', '#926383', '#eb6f6f'],
-            xkey: 'period',
-            redraw: true,
-            ykeys: ['iphone', 'ipad', 'itouch'],
-            labels: ['All Visitors', 'Returning Visitors', 'Unique Visitors'],
-            pointSize: 2,
-            hideHover: 'auto',
-            resize: true
-        });
-
-
-    });
-</script>
-<!-- calendar -->
-<script type="text/javascript" src="js/monthly.js"></script>
-<script type="text/javascript">
-    $(window).load(function () {
-
-        $('#mycalendar').monthly({
-            mode: 'event',
-
-        });
-
-        $('#mycalendar2').monthly({
-            mode: 'picker',
-            target: '#mytarget',
-            setWidth: '250px',
-            startHidden: true,
-            showTrigger: '#mytarget',
-            stylePast: true,
-            disablePast: true
-        });
-
-        switch (window.location.protocol) {
-            case 'http:':
-            case 'https:':
-                // running on a server, should be good.
-                break;
-            case 'file:':
-                alert('Just a heads-up, events will not work when run locally.');
-        }
-
-    });
-</script>
-<!-- //calendar -->
-</body>
-</html>
+<script language="javascript" type="text

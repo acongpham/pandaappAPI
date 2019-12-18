@@ -25,7 +25,7 @@
 
                 </li>
                 <li class="sub-menu">
-                    <a href="../controller/category.php">
+                    <a href="../controller/news.php">
                         <i class="fa fa-book"></i>
                         <span>Quản lý tin tức</span>
                     </a>
