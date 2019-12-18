@@ -4,8 +4,9 @@ include 'EntityClass.php';
 $key = $_POST['idShop'];
 $statusId = $_POST['statusId'];
 
-
-$query = "SELECT oder.oderId,oder.AccountId,oder.date_created,oder.totalPrice,oder.name,oder.address,oder.phone_number
+//$key = 1;
+//$statusId = 1;
+$query = "SELECT oder.oderId,oder.AccountId,oder.date_created,oder.totalPrice,SUM(product.discount) AS totaldiscount,oder.name,oder.address,oder.phone_number
              from oder INNER JOIN oder_item ON oder.oderId=oder_item.oderId INNER JOIN product ON oder_item.productId=product.productId 
             INNER JOIN shop ON shop.idShop=product.idShop WHERE shop.idShop='$key' AND oder.statusId='$statusId' 
             GROUP BY oder.oderId,oder.AccountId,oder.date_created,oder.totalPrice,oder.name,oder.address,oder.phone_number";
@@ -29,10 +30,13 @@ while ($row = mysqli_fetch_assoc($data)) {
         $row['AccountId'],
         $row['date_created'],
         $row['totalPrice'],
+        $row['totaldiscount'],
         $row['name'],
         $row['address'],
         $row['phone_number'],
-        $array2
+        $array2,
+        $statusId
+
 
     ));
 }

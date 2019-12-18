@@ -29,23 +29,26 @@ class OrderShop
 
 {
 
-	function OrderShop($oderId, $AccountId, $date_created, $totalPrice, $name, $address, $phone_number, $orderitem)
+	function OrderShop($oderId, $AccountId, $date_created, $totalPrice,$totaldiscount, $name, $address, $phone_number, $orderitem,$statusId)
 	{
 		$this->oderId=$oderId;
 		$this->AccountId=$AccountId;
 		$this->date_created=$date_created;
 		$this->totalPrice=$totalPrice;
+		$this->totaldiscount=$totaldiscount;
 		$this->name=$name;
 		$this->address=$address;
 		$this->phone_number=$phone_number;
 		$this->orderitem=$orderitem;
+		$this->statusId=$statusId;
+
 	}
 }
 class OrderCustomer
 
 {
 
-	function OrderCustomer($oderId,$idShop, $shopName, $date_created, $totalPrice, $name, $address, $phone_number, $orderitem)
+	function OrderCustomer($oderId,$idShop, $shopName, $date_created, $totalPrice, $totaldiscount,$name, $address, $phone_number, $orderitem,$statusId)
 	{
 
 		$this->oderId=$oderId;
@@ -53,10 +56,12 @@ class OrderCustomer
 		$this->shopName=$shopName;
 		$this->date_created=$date_created;
 		$this->totalPrice=$totalPrice;
+		$this->totaldiscount=$totaldiscount;
 		$this->name=$name;
 		$this->address=$address;
 		$this->phone_number=$phone_number;
 		$this->orderitem=$orderitem;
+		$this->statusId=$statusId;
 	}
 }
 class Order_item
@@ -68,6 +73,24 @@ class Order_item
 		$this->productId=$productId;
 		$this->amount=$amount;
 		$this->total=$total;
+
+	}
+}
+class Order_itemDetail
+
+
+
+{
+
+	function Order_itemDetail($productId,$name,$image,$amount,$price,$total,$discount)
+	{
+		$this->productId=$productId;
+		$this->name=$name;
+		$this->image=$image;
+		$this->amount=$amount;
+		$this->price=$price;
+		$this->total=$total;
+		$this->discount=$discount;
 
 	}
 }
@@ -102,6 +125,18 @@ class News
 		$this->detailNews=$detailNews;
 		$this->imageNews=$imageNews;
 		$this->dateCreated=$dateCreated;
+
+	}
+}
+class Revenue
+
+{
+
+	function Revenue($date_created,$revenue)
+	{
+		$this->date_created=$date_created;
+		$this->revenue=$revenue;
+
 
 	}
 }

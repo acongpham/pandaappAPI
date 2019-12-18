@@ -3,9 +3,10 @@ include 'config/dbcon.php';
 include 'EntityClass.php';
 $key = $_POST['AccountId'];
 $statusId = $_POST['statusId'];
+//$key = 142;
+//$statusId = 1;
 
-
-$query = "SELECT oder.oderId,oder.date_created,oder.totalPrice,oder.name,oder.address,oder.phone_number,shop.shopName,shop.idShop 
+$query = "SELECT oder.oderId,oder.date_created,oder.totalPrice,SUM(product.discount) AS totaldiscount,oder.name,oder.address,oder.phone_number,shop.shopName,shop.idShop
 		from oder INNER JOIN oder_item on oder_item.oderId=oder.oderId
 		 INNER JOIN product ON product.productId=oder_item.productId 
 		 INNER JOIN shop ON shop.idShop=product.idShop 
@@ -32,10 +33,12 @@ while ($row = mysqli_fetch_assoc($data)) {
         $row['shopName'],
         $row['date_created'],
         $row['totalPrice'],
+        $row['totaldiscount'],
         $row['name'],
         $row['address'],
         $row['phone_number'],
-        $array2
+        $array2,
+        $statusId
 
     ));
 }
