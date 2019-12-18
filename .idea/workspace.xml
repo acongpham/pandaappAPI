@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/controller/insertCategory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controller/NewsInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/NewsInsert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/NewsDelete.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/NewsDelete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/NewsEdit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/NewsEdit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/controller/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/news.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +139,7 @@
       <workItem from="1576547236824" duration="13257000" />
       <workItem from="1576640257257" duration="11389000" />
       <workItem from="1576659835340" duration="6547000" />
-      <workItem from="1576649298878" duration="205000" />
+      <workItem from="1576649298878" duration="2907000" />
     </task>
     <servers />
   </component>
@@ -157,10 +160,11 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="774" y="449" width="362" height="157" key="NewPhpFileDialog" timestamp="1576411589896">
-      <screen x="0" y="0" width="1920" height="1046" />
+    <state x="542" y="348" width="254" height="138" key="NewPhpFileDialog" timestamp="1576651031258">
+      <screen x="0" y="0" width="1344" height="810" />
     </state>
     <state x="774" y="449" width="362" height="157" key="NewPhpFileDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1576411589896" />
+    <state x="542" y="348" width="254" height="138" key="NewPhpFileDialog/1680.280.1366.730/0.0.1344.810@0.0.1344.810" timestamp="1576651031258" />
     <state x="630" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1576660342482">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>

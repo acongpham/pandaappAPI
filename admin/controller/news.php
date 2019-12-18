@@ -75,6 +75,7 @@ include("../module/header.php");
                                          ?>
                                     </td>
                                     <td>
+
                                         <?php
                                         echo $row['detailNews'] ?>
                                     </td>
@@ -89,15 +90,13 @@ include("../module/header.php");
 
                                     <td>
 
-                                        <a href="del_account.php?m=post&AccountId=<?php echo $row['AccountId'];?>&role=<?php
-                                        echo $row['roleId'];
-                                        ?>" onclick="return confirm('Chắc chắn xóa tài khoản <?php
+                                        <a href="NewsDelete.php?newsId=<?php echo $row['newsId'] ?>" onclick="return confirm('Chắc chắn xóa tài khoản <?php
                                         echo $row['usename'];
                                         ?>?')">
                                             <img border="0" alt="" src="../../image/image/del.png" width="20"
                                                  height="20">
                                         </a>
-                                        <a href="edit_account.php">
+                                        <a href="NewsEdit.php?newsId=<?php echo $row['newsId'] ?>">
                                             <img border="0" alt="" src="../../image/image/edit.png" width="20"
                                                  height="20">
                                         </a>

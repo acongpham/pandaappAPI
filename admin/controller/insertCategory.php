@@ -3,13 +3,49 @@ session_start();
 
 if (!isset($_SESSION['admin_login'])) {
     header('location:login.php');
-
 }
-
 include("../../config/dbcon.php");
-$query = "SELECT * FROM category";
-$data = mysqli_query($conn, $query);
 
+
+
+if (isset($_POST['uploadclick']))
+{
+    // Nếu người dùng có chọn file để upload
+    if (isset($_FILES['avatar']))
+    {
+        // Nếu file upload không bị lỗi,
+        // Tức là thuộc tính error > 0
+        if ($_FILES['avatar']['error'] > 0)
+        {
+            echo 'File Upload Bị Lỗi';
+        }
+        else{
+            // Upload file
+            $file_path = "image/Cate/";
+            move_uploaded_file($_FILES['avatar']['tmp_name'], '../../image/Cate/'.$_FILES['avatar']['name']);
+            $file_path = $file_path.basename($_FILES['avatar']['name']);
+
+
+            $categoryName = $_POST["categoryName"];
+
+
+
+            $sqlinsert ="INSERT INTO `category`( `categoryName`, `thumbnailCate`) VALUES ('$categoryName','$file_path')";
+            $in =mysqli_query($conn,$sqlinsert);
+            if($in)
+            {
+                echo 'File Uploaded';
+            }
+            else{
+                echo "Loi insert ";
+            }
+
+        }
+    }
+    else{
+        echo 'Bạn chưa chọn file upload';
+    }
+}
 
 ?>
 
@@ -35,77 +71,30 @@ include("../module/header.php");
     <section id="main-content">
         <section class="wrapper">
             <!--nội dung chính-->
-           <a href="insertCategory.php" class="btn btn-success" >Thêm Category</a>
-
-            <div>
+            <div class="row">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Danh mục sản phẩm
+                    <div class="panel-heading">Thêm danh mục</div>
+                    <div class="panel-body">
+                        <form action="insertCategory.php" enctype="multipart/form-data" method="post">
 
-                    </div>
-                    <div align="center">
-                        <table  border="1" >
+                                    <div class="form-group">
+                                        <label>Tên danh mục:</label>
+                                        <input type="text" class="form-control" name="categoryName" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Ảnh danh mục:</label>
 
-                            <tr align="center">
-                                <th width="100" bgcolor="#ff56de" align="center" ><font color="white">Số thứ tự</font></th>
-                                <th width="150"
-                                    bgcolor="ff56de"><font color="white">idcategory</font></th>
-                                <th width="300" bgcolor="ff56de"><font color="white">Tên danh mục</font></th>
-                                <th width="200" bgcolor="ff56de" align="center"><font color="white">Ảnh mô tả</font></th>
-                                <th bgcolor="ff56de" width="100"></th>
-
-
-                            </tr>
-                            </thead>
-                            <tbody align="center">
-                            <?php
-                            $stt = 1;
-                            while ($row = mysqli_fetch_assoc($data)) {
-                                ?>
-                                <tr data-expanded="true">
-                                    <td>
-                                        <?php
-                                        echo $stt; ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                        echo $row['idcategory']; ?>
-                                    </td>
-                                    <td>
-                                        <?php
+                                        <input type="file" class="form-control" name="avatar"  >
+                                    </div>
+                                    <button type="submit" class="btn btn-default" name="uploadclick">Submit</button>
 
 
-                                        echo $row['categoryName'];
-
-                                        ?>
-                                    </td>
-                                    <td>
-
-
-                                        <img alt="1fd" src="<?php
-                                        echo "../../" . $row['thumbnailCate'] ?>" width="100" height="100">
-                                    </td>
-
-                                    <td>
-
-                                        <a href="editCategory.php?id=<?php echo $row['idcategory']?>">
-                                            <img border="0" alt="" src="../../image/image/edit.png" width="20"
-                                                 height="20">
-                                        </a>
-
-                                    </td>
-                                </tr>
-                                <?php
-                                $stt++;
-                            }
-                            ?>
-
-
-                            </tbody>
-                        </table>
+                        </form>
                     </div>
                 </div>
+
             </div>
+
 
 
             <!--            End nội dung chính-->
@@ -215,3 +204,4 @@ include("../module/header.php");
 <!-- //calendar -->
 </body>
 </html>
+

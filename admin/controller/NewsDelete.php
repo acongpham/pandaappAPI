@@ -8,6 +8,9 @@ if (!isset($_SESSION['admin_login'])) {
 }
 
 include("../../config/dbcon.php");
-
+$newsId = $_GET["newsId"];
+$sql = "DELETE FROM `news` WHERE newsId=$newsId";
+$data = mysqli_query($conn,$sql);
+header('location:news.php');
 
 ?>
