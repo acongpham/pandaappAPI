@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/controller/insertCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DeleteProduct.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controller/NewsDelete.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/NewsDelete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controller/NewsEdit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/NewsEdit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controller/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controller/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getProductofShop.php" beforeDir="false" afterPath="$PROJECT_DIR$/getProductofShop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Cate/44412584_926005470932325_3934447741173760000_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/Cate/44412584_926005470932325_3934447741173760000_n.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Cate/59022742_594814081347631_1346114717038411776_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/Cate/59022742_594814081347631_1346114717038411776_n.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Cate/59380272_1030474897341247_4061469071080685568_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/Cate/59380272_1030474897341247_4061469071080685568_n.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Cate/60523036_424501314765742_310828896335429632_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/Cate/60523036_424501314765742_310828896335429632_n.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Cate/giaycaogot.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Cate/giaycaogot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Cate/giaysandals.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Cate/giaysandals.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,17 +39,20 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/admin/controller" />
       <recent name="D:\InstalllToC\xampp\htdocs\pandaapAPI" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/admin/controller" />
-    </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.getInfoShop.php">
+  <component name="RunManager" selected="JavaScript Debug.DeleteProduct.php">
     <configuration name="Changepassword.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaappAPI/Changepassword.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="DeleteProduct.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaappAPI/DeleteProduct.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="EditAccount.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaappAPI/EditAccount.php" useBuiltInWebServerPort="true">
@@ -58,16 +64,13 @@
     <configuration name="getInfoShop.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/pandaappAPI/getInfoShop.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="getOrderItemDetail.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pandaappAPI/getOrderItemDetail.php" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.DeleteProduct.php" />
         <item itemvalue="JavaScript Debug.getInfoShop.php" />
         <item itemvalue="JavaScript Debug.Changepassword.php" />
         <item itemvalue="JavaScript Debug.EditAccount.php" />
         <item itemvalue="JavaScript Debug.OpenShop.php" />
-        <item itemvalue="JavaScript Debug.getOrderItemDetail.php" />
       </list>
     </recent_temporary>
   </component>
@@ -140,6 +143,8 @@
       <workItem from="1576640257257" duration="11389000" />
       <workItem from="1576659835340" duration="6547000" />
       <workItem from="1576649298878" duration="2907000" />
+      <workItem from="1576748709640" duration="7310000" />
+      <workItem from="1576812502088" duration="1782000" />
     </task>
     <servers />
   </component>
@@ -160,16 +165,69 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="643" y="336" width="613" height="398" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576755265643">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="643" y="336" width="613" height="398" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1052@0.0.1920.1052" timestamp="1576755265643" />
+    <state width="1878" height="340" key="GridCell.Tab.0.bottom" timestamp="1576761947463">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1878" height="340" key="GridCell.Tab.0.bottom/0.0.1920.1052@0.0.1920.1052" timestamp="1576761947463" />
+    <state width="1878" height="340" key="GridCell.Tab.0.center" timestamp="1576761947463">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1878" height="340" key="GridCell.Tab.0.center/0.0.1920.1052@0.0.1920.1052" timestamp="1576761947463" />
+    <state width="1878" height="340" key="GridCell.Tab.0.left" timestamp="1576761947463">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1878" height="340" key="GridCell.Tab.0.left/0.0.1920.1052@0.0.1920.1052" timestamp="1576761947463" />
+    <state width="1878" height="340" key="GridCell.Tab.0.right" timestamp="1576761947463">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1878" height="340" key="GridCell.Tab.0.right/0.0.1920.1052@0.0.1920.1052" timestamp="1576761947463" />
+    <state width="1878" height="340" key="GridCell.Tab.1.bottom" timestamp="1576761947387">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1878" height="340" key="GridCell.Tab.1.bottom/0.0.1920.1052@0.0.1920.1052" timestamp="1576761947387" />
+    <state width="1878" height="340" key="GridCell.Tab.1.center" timestamp="1576761947387">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1878" height="340" key="GridCell.Tab.1.center/0.0.1920.1052@0.0.1920.1052" timestamp="1576761947387" />
+    <state width="1878" height="340" key="GridCell.Tab.1.left" timestamp="1576761947387">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1878" height="340" key="GridCell.Tab.1.left/0.0.1920.1052@0.0.1920.1052" timestamp="1576761947387" />
+    <state width="1878" height="340" key="GridCell.Tab.1.right" timestamp="1576761947387">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1878" height="340" key="GridCell.Tab.1.right/0.0.1920.1052@0.0.1920.1052" timestamp="1576761947387" />
+    <state width="1878" height="340" key="GridCell.Tab.2.bottom" timestamp="1576761947388">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1878" height="340" key="GridCell.Tab.2.bottom/0.0.1920.1052@0.0.1920.1052" timestamp="1576761947388" />
+    <state width="1878" height="340" key="GridCell.Tab.2.center" timestamp="1576761947388">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1878" height="340" key="GridCell.Tab.2.center/0.0.1920.1052@0.0.1920.1052" timestamp="1576761947388" />
+    <state width="1878" height="340" key="GridCell.Tab.2.left" timestamp="1576761947388">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1878" height="340" key="GridCell.Tab.2.left/0.0.1920.1052@0.0.1920.1052" timestamp="1576761947388" />
+    <state width="1878" height="340" key="GridCell.Tab.2.right" timestamp="1576761947388">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1878" height="340" key="GridCell.Tab.2.right/0.0.1920.1052@0.0.1920.1052" timestamp="1576761947388" />
     <state x="542" y="348" width="254" height="138" key="NewPhpFileDialog" timestamp="1576651031258">
       <screen x="0" y="0" width="1344" height="810" />
     </state>
     <state x="774" y="449" width="362" height="157" key="NewPhpFileDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1576411589896" />
     <state x="542" y="348" width="254" height="138" key="NewPhpFileDialog/1680.280.1366.730/0.0.1344.810@0.0.1344.810" timestamp="1576651031258" />
-    <state x="630" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1576660342482">
-      <screen x="0" y="0" width="1920" height="1046" />
+    <state x="630" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1576812502967">
+      <screen x="0" y="0" width="1920" height="1052" />
     </state>
     <state x="630" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575711053685" />
     <state x="630" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1576660342482" />
+    <state x="630" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1052@0.0.1920.1052" timestamp="1576812502967" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
