@@ -145,6 +145,8 @@
       <workItem from="1576649298878" duration="2907000" />
       <workItem from="1576748709640" duration="7310000" />
       <workItem from="1576812502088" duration="1782000" />
+      <workItem from="1576944519162" duration="10000" />
+      <workItem from="1576987882264" duration="487000" />
     </task>
     <servers />
   </component>
@@ -222,11 +224,12 @@
     </state>
     <state x="774" y="449" width="362" height="157" key="NewPhpFileDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1576411589896" />
     <state x="542" y="348" width="254" height="138" key="NewPhpFileDialog/1680.280.1366.730/0.0.1344.810@0.0.1344.810" timestamp="1576651031258" />
-    <state x="630" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1576812502967">
-      <screen x="0" y="0" width="1920" height="1052" />
+    <state x="630" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1576987883510">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="630" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575711053685" />
     <state x="630" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1576660342482" />
+    <state x="630" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576987883510" />
     <state x="630" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1052@0.0.1920.1052" timestamp="1576812502967" />
   </component>
   <component name="XDebuggerManager">

@@ -1,8 +1,8 @@
 <?php
 include 'config/dbcon.php';
-//$productId = $_POST['productId'];
+$productId = $_POST['productId'];
 
-$productId = 4674;
+//$productId = 4674;
 $query1 = "SELECT image FROM images WHERE productId=$productId";
 $data1=mysqli_query($conn, $query1);
 $array = array();
