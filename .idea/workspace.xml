@@ -35,17 +35,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/controller" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/admin/controller" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\pandaappAPI\admin\controller" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/admin/controller" />
       <recent name="D:\InstalllToC\xampp\htdocs\pandaapAPI" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/controller" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.DeleteProduct.php">
@@ -147,6 +148,7 @@
       <workItem from="1576812502088" duration="1782000" />
       <workItem from="1576944519162" duration="10000" />
       <workItem from="1576987882264" duration="487000" />
+      <workItem from="1577344447890" duration="6202000" />
     </task>
     <servers />
   </component>
@@ -224,13 +226,17 @@
     </state>
     <state x="774" y="449" width="362" height="157" key="NewPhpFileDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1576411589896" />
     <state x="542" y="348" width="254" height="138" key="NewPhpFileDialog/1680.280.1366.730/0.0.1344.810@0.0.1344.810" timestamp="1576651031258" />
-    <state x="630" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1576987883510">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="630" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1577344449030">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="630" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575711053685" />
+    <state x="630" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577344449030" />
     <state x="630" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1576660342482" />
     <state x="630" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576987883510" />
     <state x="630" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1052@0.0.1920.1052" timestamp="1576812502967" />
+    <state x="750" y="180" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1577346682563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="750" y="180" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1577346682563" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

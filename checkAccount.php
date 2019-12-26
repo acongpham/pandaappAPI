@@ -7,7 +7,7 @@ $passwordaccount = MD5($_POST['passwordaccount']);
 
 
 
-$query = "SELECT * FROM account WHERE usename='$useraccount' AND password='$passwordaccount' AND accountStatus=1";
+$query = "SELECT * FROM account WHERE usename='$useraccount' AND password='$passwordaccount'";
 $data = mysqli_query($conn, $query);
 $arrAccount = array();
 while ($row = mysqli_fetch_assoc($data)) {

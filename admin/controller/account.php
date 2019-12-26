@@ -134,16 +134,13 @@ include("../module/header.php");
 
                                         <a href="del_account.php?m=post&AccountId=<?php echo $row['AccountId'];?>&role=<?php
                                         echo $row['roleId'];
-                                        ?>" onclick="return confirm('Chắc chắn xóa tài khoản <?php
+                                        ?>" onclick="return confirm('Chắc chắn khóa tài khoản <?php
                                         echo $row['usename'];
                                         ?>?')">
                                             <img border="0" alt="" src="../../image/image/del.png" width="20"
                                                  height="20">
                                         </a>
-                                        <a href="edit_account.php">
-                                            <img border="0" alt="" src="../../image/image/edit.png" width="20"
-                                                 height="20">
-                                        </a>
+
 
                                     </td>
                                 </tr>
