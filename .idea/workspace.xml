@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="047cf783-c0d2-4b26-b5f4-e491d7031d75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DeleteProduct.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/controller/Detailnews.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getProductofShop.php" beforeDir="false" afterPath="$PROJECT_DIR$/getProductofShop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/Cate/44412584_926005470932325_3934447741173760000_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/Cate/44412584_926005470932325_3934447741173760000_n.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/Cate/59022742_594814081347631_1346114717038411776_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/Cate/59022742_594814081347631_1346114717038411776_n.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/Cate/59380272_1030474897341247_4061469071080685568_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/Cate/59380272_1030474897341247_4061469071080685568_n.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/Cate/60523036_424501314765742_310828896335429632_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/image/Cate/60523036_424501314765742_310828896335429632_n.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/Cate/giaycaogot.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Cate/giaycaogot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/Cate/giaysandals.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Cate/giaysandals.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/NewsInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/NewsInsert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controller/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/news.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +34,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\pandaappAPI\admin\controller" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/admin/controller" />
-      <recent name="D:\InstalllToC\xampp\htdocs\pandaapAPI" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/admin/controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/controller" />
+      <recent name="C:\xampp\htdocs\pandaappAPI\admin\controller" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="D:\InstalllToC\xampp\htdocs\pandaapAPI" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.DeleteProduct.php">
@@ -149,6 +144,7 @@
       <workItem from="1576944519162" duration="10000" />
       <workItem from="1576987882264" duration="487000" />
       <workItem from="1577344447890" duration="6202000" />
+      <workItem from="1577460680299" duration="2166000" />
     </task>
     <servers />
   </component>
@@ -226,12 +222,12 @@
     </state>
     <state x="774" y="449" width="362" height="157" key="NewPhpFileDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1576411589896" />
     <state x="542" y="348" width="254" height="138" key="NewPhpFileDialog/1680.280.1366.730/0.0.1344.810@0.0.1344.810" timestamp="1576651031258" />
-    <state x="630" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1577344449030">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="630" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1577460680475">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="630" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577344449030" />
     <state x="630" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1576660342482" />
-    <state x="630" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1576987883510" />
+    <state x="630" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1577460680475" />
     <state x="630" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1052@0.0.1920.1052" timestamp="1576812502967" />
     <state x="750" y="180" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1577346682563">
       <screen x="0" y="0" width="1920" height="1040" />

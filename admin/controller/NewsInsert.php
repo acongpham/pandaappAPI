@@ -70,7 +70,7 @@ include("../module/header.php");
                 <div class="panel panel-default">
                     <div class="panel-heading">Thêm tin tức</div>
                     <div class="panel-body">
-                        <form action="newsinsert.php" enctype="multipart/form-data" method="post">
+                        <form action="NewsInsert.php" enctype="multipart/form-data" method="post">
 
 
                             <div class="form-group">

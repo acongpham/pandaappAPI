@@ -52,9 +52,9 @@ include("../module/header.php");
                             <thead>
                             <tr>
                                 <th align="center" style="width: 10%">ID</th>
-                                <th  style="width: 10%">Tiêu đề</th>
-                                <th style="width: 10%">Nội dung</th>
-                                <th style="width: 10%">Ảnh</th>
+                                <th  >Tiêu đề</th>
+
+                                <th >Ảnh</th>
                                 <th style="width: 10%">Ngày tạo</th>
 
                             </tr>
@@ -74,11 +74,7 @@ include("../module/header.php");
 
                                          ?>
                                     </td>
-                                    <td>
 
-                                        <?php
-                                        echo $row['detailNews'] ?>
-                                    </td>
                                     <td>
                                        <img src="<?php
                                         echo '../../'.$row['imageNews'] ?>" height="300px" width="300px" />
@@ -98,6 +94,10 @@ include("../module/header.php");
                                         </a>
                                         <a href="NewsEdit.php?newsId=<?php echo $row['newsId'] ?>">
                                             <img border="0" alt="" src="../../image/image/edit.png" width="20"
+                                                 height="20">
+                                        </a>
+                                        <a href="Detailnews.php?m=post&newsId=<?php echo $row['newsId'] ?>">
+                                            <img border="0" alt="" src="../../image/image/show.png" width="20"
                                                  height="20">
                                         </a>
 
